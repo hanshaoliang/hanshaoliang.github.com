@@ -28,15 +28,10 @@ body{
 	width:221px;
 	}
 .splash{
-	background:#000;
-	height:420px;
-	background-color:#000;
-	background-image:url(../images/02.jpg);
-	background-repeat:no-repeat;
-	background-position:center;
 	}
 .splash_content{
-	margin:0 auto;
+    display: none;
+	margin: 0 auto;
 	text-align:center;
 	}
 .splash_shadow{

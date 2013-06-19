@@ -32,6 +32,8 @@
 
             );
         });
+
+
     });
 
 </script>
@@ -88,17 +90,30 @@
           </ul>
       </div>
     </div>
-    
-    
-    
-    
-    
     </div>
 </div>
 <div class="splash">
-	<div class="splash_content"></div>
+	<div class="splash_content">
+        <img src="images/lunxun_01.jpg" alt="">
+        <img src="images/lunxun_02.jpg" alt="">
+        <img src="images/lunxun_03.jpg" alt="">
+        <img src="images/lunxun_04.jpg" alt="">
+        <img src="images/lunxun_05.jpg" alt="">
+        <img src="images/lunxun_06.jpg" alt="">
+    </div>
 </div>
 <div class="splash_shadow"><img src="images/03.jpg" /></div>
 <div class="content"><img src="images/04.jpg" /></div>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript">
+    $('.splash_content').slidesjs({
+        width:$('body').width(),
+        height: 420,
+        play: {auto: true},
+        navigation: {active: false},
+        pagination: {active: false}
+    });
+
+</script>
 </body>
 </html>
