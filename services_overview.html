@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Sktlab--Ideas brought to life</title>
+<link href="css/style.css"  rel="stylesheet" type="text/css" />
+<link href="css/normalize.css"  rel="stylesheet" type="text/css" />
+<link  href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<script type="text/javascript">
+
+    var mouseover_tid = [];
+    var mouseout_tid = [];
+
+    jQuery(document).ready(function(){
+        jQuery('#menus > li').each(function(index){
+            jQuery(this).hover(
+
+                    function(){
+                        var _self = this;
+                        clearTimeout(mouseout_tid[index]);
+                        mouseover_tid[index] = setTimeout(function() {
+                            jQuery(_self).find('ul:eq(0)').slideDown(200);
+                        }, 400);
+                    },
+
+                    function(){
+                        var _self = this;
+                        clearTimeout(mouseover_tid[index]);
+                        mouseout_tid[index] = setTimeout(function() {
+                            jQuery(_self).find('ul:eq(0)').slideUp(200);
+                        }, 400);
+                    }
+
+            );
+        });
+    });
+
+</script>
+    <style type="text/css">
+
+        #menus{
+            margin: 38px 0 0 250px;
+            overflow: hidden;
+			font-size:12px;
+        }
+
+        #menus > li{
+			text-transform:uppercase;
+			width:90px;
+			height:24px;
+			line-height:24px;
+            float: left;
+            list-style: none;
+			text-align:center;
+			cursor:pointer;
+	        }
+		#menus > li:hover{
+			width:88px;
+			height:23px;
+			line-height:23px;
+			border-top:1px solid #d8d8d8;
+			border-left:1px solid #d8d8d8;
+			border-right:1px solid #d8d8d8;
+			background:#fff;
+			color:#ffa200;
+			z-index:1999;
+	        }
+		.no_boder{
+			text-transform:uppercase;
+			width:90px;
+			height:24px;
+			line-height:24px;
+            float: left;
+            list-style: none;
+			text-align:center;
+			
+			}
+			.no_boder:hover{
+			width:90px;
+			height:24px;
+			line-height:24px;
+			color:#ffa200;
+			z-index:1999;
+			cursor:pointer;
+				}
+.m_r{
+	margin-right: 5px;
+	}
+        /*#menus > li > a{
+            display: block;
+			text-align:center;
+            color: #000000;
+            text-decoration: none;
+        }
+        #menu a:hover{
+			color:#ffa200;
+        }*/
+
+        #menus > li > ul{
+            position: absolute;
+            padding:10px 5px 5px 5px;
+            z-index: 1000;
+            display: none;
+			background:#FFF;
+			border-bottom:1px solid #d8d8d8;
+			border-left:1px solid #d8d8d8;
+			border-right:1px solid #d8d8d8;
+			box-shadow: 0px 5px 4px #010;
+        }
+.dingwei_a{
+	margin: 0px 0px 0px -15px;
+	}
+.dingwei_b{
+	width:135px;
+	margin: 0px 0px 0px -24px;
+	}
+.dingwei_c{
+	width:84px;
+	margin: 0px 0px 0px -3px;
+	}
+	
+	
+        #menus > li > ul > li{
+			display:block;
+			font-size:11px;
+			
+        }
+		.yanse{
+			color:#0132ad;
+			line-height:24px;
+			}
+		.yanse:hover{
+			color:#ffa200;
+			}
+
+    </style>
+</head>
+<body>
+<div class="zt_body">
+  <div class="header">
+   	<div class=" header_left"><a href="index.html"><img src="images/logo.png" /></a></div>
+      <div id="menubar" >
+          <ul id="menus" class="menus">
+              <li  class="m_r">
+                  ABOUT US
+                  <ul class="dingwei_a">
+                      <li style="border-bottom:1px dashed  #BBB; " >
+                          <a href="overview.html"  class="yanse"  >OVERVIEW</a>
+                      </li>
+                      <li>
+                          <a href="management.html" class="yanse">MANAGEMENT TEAM</a>
+                      </li>
+                
+                  </ul>
+              </li>
+              <li class="m_r"> 
+                  SERVICES
+                  <ul class="dingwei_b">
+                      <li style="border-bottom:1px dashed  #BBB; " >
+                          <a href="services_product.html" class="yanse"  >Product Incubation</a>
+                      </li>
+                      <li style="border-bottom:1px dashed  #BBB; ">
+                          <a href="services_overview.html" class="yanse"  >Overview</a>
+                      </li>
+                       <li style="border-bottom:1px dashed  #BBB; ">
+                          <a href="services_case.html" class="yanse"  >Case Studies</a>
+                      </li>
+                      <li>
+                          <a href="services_china.html" class="yanse" >China Market Entry</a>
+                      </li>
+                  </ul>
+              </li>
+              <li  style=" margin-right:10px;">
+                  CAREERS
+                  <ul class="dingwei_c">
+                      <li style="border-bottom:1px dashed  #BBB; " >
+                          <a href="us.html" class="yanse">us</a>
+                      </li>
+                      <li>
+                          <a href="china.html" class="yanse">china</a>
+                      </li>
+                  </ul>
+              </li>
+              <span class="no_boder" onclick="window.open('contact_us.html','_self');">
+                  CONTACT US
+              </span>
+
+          </ul>
+      </div>
+    </div>
+    <div class="gg_new">
+    	<img src="images/gg_08.jpg" />
+    </div>
+    <div class="splash_shadow"></div>
+   <!-- <div class=" Headline" style="font-family: Helvetica-Light">Building world class software products.</div>-->
+    <div class="Bread"><a href="#">Home </a> > <a href="#" style="margin-left:3px;">Services </a> > <a href="#" style="margin-left:3px;">Product Engineering</a> > <a href="#" style="margin-left:3px;">Overview</a>  </div>
+    <div class="zy_content">
+    	<div style="width:120px; height:23px; margin-top:14px; margin-bottom:20px;"><img src="images/Overview.jpg" /></div>
+        <div style="line-height:18.4px; padding-bottom:10px;">
+        Taking a product from concept to realization is a complex process. SKT Lab has assisted many companies, small and large to build their core software product. We leverage the latest in technology, including cloud computing, mobile apps, and big data. Our customers have experienced many benefits in working with us, such as:<br /><br />
+
+<span style="color:#0132ad;">Time-to-market:</span> SKT Lab provides experience, scalability and diverse technical expertise for quick ramp-up.<br />
+<span style="color:#0132ad;">Quality: </span>We have strong expertise in diverse technologies and industries, and dedication to consistent customer satisfaction and on-time delivery.<br />
+<span style="color:#0132ad;">Security: </span>Proven IP protection and security via legal enforcement, physical protection, and staff training.<br />
+<span style="color:#0132ad;">Cost reduction: </span>Reduce overall costs by leveraging high-value technical talent in China to maximize your return on R&D investment.<br />
+<span style="color:#0132ad;">Business agility: </span>Diversify your outsourcing risks with a China-based global component, and flexible delivery models.
+        </div>
+        
+        
+        
+        
+    </div>
+    
+   <!-- <div class="content">
+    	<div style="float:left"><img src="images/test_01.jpg" /></div>
+        <div style="float:left"><img src="images/test_02.jpg" /></div>
+        <div style="float:left"><img src="images/test_03.jpg" /></div>
+    </div>-->
+    <div class="foot">Copyright 2013 SKT Lab. All rights reserved.</div>
+</div>
+
+</body>
+</html>
