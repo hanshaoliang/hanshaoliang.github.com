@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<title>Sktlab--Ideas brought to life</title>
 <link href="css/style.css"  rel="stylesheet" type="text/css" />
-<link href="css/normalize.css"  rel="stylesheet" type="text/css" />
-<link  href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>sktlab_about</title>
 <script type="text/javascript">
 
     var mouseover_tid = [];
@@ -39,119 +35,24 @@
     });
 
 </script>
-    <style type="text/css">
 
-        #menus{
-            margin: 38px 0 0 250px;
-            overflow: hidden;
-			font-size:12px;
-        }
 
-        #menus > li{
-			text-transform:uppercase;
-			width:90px;
-			height:24px;
-			line-height:24px;
-            float: left;
-            list-style: none;
-			text-align:center;
-			cursor:pointer;
-	        }
-		#menus > li:hover{
-			width:88px;
-			height:23px;
-			line-height:23px;
-			border-top:1px solid #d8d8d8;
-			border-left:1px solid #d8d8d8;
-			border-right:1px solid #d8d8d8;
-			background:#fff;
-			color:#ffa200;
-			z-index:1999;
-	        }
-		.no_boder{
-			text-transform:uppercase;
-			width:90px;
-			height:24px;
-			line-height:24px;
-            float: left;
-            list-style: none;
-			text-align:center;
-			
-			}
-			.no_boder:hover{
-			width:90px;
-			height:24px;
-			line-height:24px;
-			color:#ffa200;
-			z-index:1999;
-			cursor:pointer;
-				}
-.m_r{
-	margin-right: 5px;
-	}
-        /*#menus > li > a{
-            display: block;
-			text-align:center;
-            color: #000000;
-            text-decoration: none;
-        }
-        #menu a:hover{
-			color:#ffa200;
-        }*/
-
-        #menus > li > ul{
-            position: absolute;
-            padding:10px 5px 5px 5px;
-            z-index: 1000;
-            display: none;
-			background:#FFF;
-			border-bottom:1px solid #d8d8d8;
-			border-left:1px solid #d8d8d8;
-			border-right:1px solid #d8d8d8;
-			box-shadow: 0px 5px 4px #010;
-        }
-.dingwei_a{
-	margin: 0px 0px 0px -15px;
-	}
-.dingwei_b{
-	width:135px;
-	margin: 0px 0px 0px -24px;
-	}
-.dingwei_c{
-	width:84px;
-	margin: 0px 0px 0px -3px;
-	}
-	
-	
-        #menus > li > ul > li{
-			display:block;
-			font-size:11px;
-			
-        }
-		.yanse{
-			color:#0132ad;
-			line-height:24px;
-			}
-		.yanse:hover{
-			color:#ffa200;
-			}
-
-    </style>
 </head>
+
 <body>
-<div class="zt_body">
-  <div class="header">
-   	<div class=" header_left"><a href="index.html"><img src="images/logo.png" /></a></div>
-      <div id="menubar" >
+<div class="top">
+	<div class="top_content">
+    	<div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+        <div id="menubar" >
           <ul id="menus" class="menus">
               <li  class="m_r">
                   ABOUT US
                   <ul class="dingwei_a">
                       <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="overview.html"  class="yanse"  >OVERVIEW</a>
+                          <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
                       </li>
                       <li>
-                          <a href="management.html" class="yanse">MANAGEMENT TEAM</a>
+                          <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
                       </li>
                 
                   </ul>
@@ -163,17 +64,14 @@
                           <a href="services_product.html" class="yanse"  >Product Incubation</a>
                       </li>
                       <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_overview.html" class="yanse"  >Overview</a>
-                      </li>
-                       <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_case.html" class="yanse"  >Case Studies</a>
+                          <a href="services_overview.html" class="yanse"  >Product Engineering</a>
                       </li>
                       <li>
                           <a href="services_china.html" class="yanse" >China Market Entry</a>
                       </li>
                   </ul>
               </li>
-              <li  style=" margin-right:10px;">
+              <li class="m_r">
                   CAREERS
                   <ul class="dingwei_c">
                       <li style="border-bottom:1px dashed  #BBB; " >
@@ -184,43 +82,37 @@
                       </li>
                   </ul>
               </li>
-              <span class="no_boder" onclick="window.open('contact_us.html','_self');">
+              <span class="no_boder" onClick="window.open('contact_us.html','_self');">
                   CONTACT US
               </span>
 
           </ul>
       </div>
     </div>
-    <div class="gg_new">
-    	<img src="images/gg_07.jpg" />
-    </div>
-    <div class="splash_shadow"></div>
-   <!-- <div class=" Headline" style="font-family: Helvetica-Light">Building world class software products.</div>-->
-    <div class="Bread"><a href="#">Home </a> > <a href="#" style="margin-left:3px;">Services </a> > <a href="#" style="margin-left:3px;">China Market Entry</a> </div>
-    <div class="zy_content">
-    	<div style="width:247px; height:30px; margin-top:14px; margin-bottom:20px;"><img src="images/se_china.jpg" /></div>
-        <div style="line-height:18.4px; padding-bottom:10px;">
-        SKT Lab helps startup companies as well as mature enterprises enter the China market in the following ways:
-        <ul>
-            <li class="bq_top">Localization and internationalization of products to fit local customer requirements</li>
-            <li class="bq_top">Joint sales and marketing by leveraging SKT Lab’s existing customer base and partners</li>
-            <li class="bq_top">Engage SKT Lab as a partner - implementation partner, reseller or joint venture</li>
-            <li class="bq_top">Consulting services including navigating local government relationships, policies, and rules</li>
-    </ul>
-        </div>
-        
-        
-        
-        
-    </div>
     
-   <!-- <div class="content">
-    	<div style="float:left"><img src="images/test_01.jpg" /></div>
-        <div style="float:left"><img src="images/test_02.jpg" /></div>
-        <div style="float:left"><img src="images/test_03.jpg" /></div>
-    </div>-->
+    
+    
+    
+    
+    </div>
+</div>
+<div class="splash_zi"><img src="images/loufang.jpg" /></div>
+<div class="splash_shadowb"><img src="images/06.jpg" /></div>
+<div class="content">
+	<div class="content_mianbaoxie"><a href="index.html">Home</a> > <a href="#">Services</a> > <a href="services_china.html">China Market Entry</a></div>
+    <div class="content_bt"><img src="images/marketentry.jpg" /></div>
+    <div class="content_new">
+		<div style="margin-left:10px; line-height:28px; font-size:14px; color:#3d3d3d;">
+        <ul>
+        SKT Lab helps startup companies as well as mature enterprises enter the China market in the following ways:
+        <li>Localization and internationalization of products to fit local customer requirements</li>
+        <li>Joint sales and marketing by leveraging SKT Lab’s existing customer base and partners
+        <li>Engage SKT Lab as a partner - implementation partner, reseller or joint venture
+        <li>Consulting services including navigating local government relationships, policies, and rules
+        </ul>
+        </div>
+    </div>
     <div class="foot">Copyright 2013 SKT Lab. All rights reserved.</div>
 </div>
-
 </body>
 </html>
