@@ -1,42 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="css/style.css"  rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <title>sktlab</title>
-    <script type="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/style.css"  rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>sktlab</title>
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
 
         var mouseover_tid = [];
         var mouseout_tid = [];
 
-        jQuery(document).ready(function(){
-            jQuery('#menus > li').each(function(index){
-                jQuery(this).hover(
+        jQuery('#menus > li').each(function(index){
+            jQuery(this).hover(
 
-                        function(){
-                            var _self = this;
-                            clearTimeout(mouseout_tid[index]);
-                            mouseover_tid[index] = setTimeout(function() {
-                                jQuery(_self).find('ul:eq(0)').slideDown(200);
-                            }, 400);
-                        },
+                    function(){
+                        var _self = this;
+                        clearTimeout(mouseout_tid[index]);
+                        mouseover_tid[index] = setTimeout(function() {
+                            jQuery(_self).find('ul:eq(0)').slideDown(200);
+                        }, 400);
+                    },
 
-                        function(){
-                            var _self = this;
-                            clearTimeout(mouseover_tid[index]);
-                            mouseout_tid[index] = setTimeout(function() {
-                                jQuery(_self).find('ul:eq(0)').slideUp(200);
-                            }, 400);
-                        }
+                    function(){
+                        var _self = this;
+                        clearTimeout(mouseover_tid[index]);
+                        mouseout_tid[index] = setTimeout(function() {
+                            jQuery(_self).find('ul:eq(0)').slideUp(200);
+                        }, 400);
+                    }
 
-                );
-            });
-
-
+            );
         });
 
-    </script>
+
+        //second level menu
+        $('.second-level-menu-container').hover(
+                function(){
+                    var _self = this;
+                    jQuery(_self).find('ul:eq(0)').slideDown(200);
+                },
+
+                function(){
+                    var _self = this;
+                    jQuery(_self).find('ul:eq(0)').slideUp(200);
+                }
+        );
+
+    });
+
+</script>
     <style type="text/css">
         .splash_content{
             height: 420px;
@@ -54,64 +68,88 @@
             z-index: 100;
         }
 
+        .second-level-menu-container{
+            position: relative;
+        }
+        /* menu */
+        .second-level-menu{
+            position: absolute;
+            left: 175px;
+            top: 0;
+            width: 130px;
+            padding: 0;
+            list-style: none;
+            background-color: red;
+            display: none;
+        }
+
+
     </style>
 
 </head>
 
 <body>
 <div class="top">
-    <div class="top_content">
-        <div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+	<div class="top_content">
+    	<div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
         <div id="menubar" >
-            <ul id="menus" class="menus">
-                <li  class="m_r">
-                    ABOUT US
-                    <ul class="dingwei_a">
-                        <li style="border-bottom:1px dashed  #BBB; " >
-                            <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
-                        </li>
-                        <li>
-                            <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="m_r">
-                    SERVICES
-                    <ul class="dingwei_b">
-                        <li style="border-bottom:1px dashed  #BBB; " >
-                            <a href="services_product.html" class="yanse"  >Product Incubation</a>
-                        </li>
-                        <li style="border-bottom:1px dashed  #BBB; ">
-                            <a href="services_overview.html" class="yanse"  >Product Engineering</a>
-                        </li>
-                        <li>
-                            <a href="services_china.html" class="yanse" >China Market Entry</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="m_r">
-                    CAREERS
-                    <ul class="dingwei_c">
-                        <li style="border-bottom:1px dashed  #BBB; " >
-                            <a href="us.html" class="yanse">us</a>
-                        </li>
-                        <li>
-                            <a href="china.html" class="yanse">china</a>
-                        </li>
-                    </ul>
-                </li>
+          <ul id="menus" class="menus">
+              <li  class="m_r">
+                  ABOUT US
+                  <ul class="dingwei_a">
+                      <li style="border-bottom:1px dashed  #BBB; " >
+                          <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
+                      </li>
+                      <li>
+                          <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
+                      </li>
+                
+                  </ul>
+              </li>
+              <li class="m_r"> 
+                  SERVICES
+                  <ul class="dingwei_b">
+                      <li style="border-bottom:1px dashed  #BBB; " >
+                          <a href="services_product.html" class="yanse"  >Product Incubation</a>
+                      </li>
+                      <li style="border-bottom:1px dashed  #BBB; " class="second-level-menu-container">
+                          <a href="#">Product Engineering</a>
+                          <ul class="second-level-menu">
+                              <li>
+                                  North
+                              </li>
+                              <li>
+                                  South
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="services_china.html" class="yanse" >China Market Entry</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="m_r">
+                  CAREERS
+                  <ul class="dingwei_c">
+                      <li style="border-bottom:1px dashed  #BBB; ">
+                          <a href="us.html" class="yanse">us</a>
+                      </li>
+                      <li>
+                          <a href="china.html" class="yanse">china</a>
+                      </li>
+                  </ul>
+              </li>
               <span class="no_boder" onClick="window.open('contact_us.html','_self');">
                   CONTACT US
               </span>
 
-            </ul>
-        </div>
+          </ul>
+      </div>
+    </div>
     </div>
 </div>
-</div>
 <div class="splash">
-    <div class="splash_content">
+	<div class="splash_content">
         <!--<img src="images/lunxun_06.jpg" alt="">-->
         <!--<img src="images/lunxun_06.jpg" alt="">-->
         <div class="slider-image slider"></div>
@@ -122,13 +160,13 @@
 <div class="content"><img src="images/04.jpg" /></div>
 <script type="text/javascript" src="js/jquery.slides.min.js"></script>
 <script type="text/javascript">
-    //    $('.splash_content').width(2484)
-    //    $('.splash_content').height(420)
-    //    $('.splash_content').slidesjs({
-    //        play: {auto: true},
-    //        navigation: {active: false},
-    //        pagination: {active: false}
-    //    });
+//    $('.splash_content').width(2484)
+//    $('.splash_content').height(420)
+//    $('.splash_content').slidesjs({
+//        play: {auto: true},
+//        navigation: {active: false},
+//        pagination: {active: false}
+//    });
 
     var interval = 5000;
     var currentImage = 1;
