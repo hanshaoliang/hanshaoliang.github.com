@@ -37,6 +37,24 @@
     });
 
 </script>
+    <style type="text/css">
+        .splash_content{
+            height: 420px;
+            background-color: #000000;
+            position: relative;
+        }
+        .slider-image{
+            height: 420px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .slider{
+            background: #000000 url('images/lunxun_01.jpg') no-repeat center ;
+            z-index: 100;
+        }
+
+    </style>
 
 </head>
 
@@ -94,25 +112,40 @@
 </div>
 <div class="splash">
 	<div class="splash_content">
-        <img src="images/lunxun_01.jpg" alt="">
-        <img src="images/lunxun_02.jpg" alt="">
-        <img src="images/lunxun_03.jpg" alt="">
-        <img src="images/lunxun_04.jpg" alt="">
-        <img src="images/lunxun_05.jpg" alt="">
-        <img src="images/lunxun_06.jpg" alt="">
+        <!--<img src="images/lunxun_06.jpg" alt="">-->
+        <!--<img src="images/lunxun_06.jpg" alt="">-->
+        <div class="slider-image slider"></div>
+        <div class="slider-image slider_back"></div>
     </div>
 </div>
 <div class="splash_shadow"><img src="images/03.jpg" /></div>
 <div class="content"><img src="images/04.jpg" /></div>
 <script type="text/javascript" src="js/jquery.slides.min.js"></script>
 <script type="text/javascript">
-    $('.splash_content').slidesjs({
-        width:$('body').width(),
-        height: 420,
-        play: {auto: true},
-        navigation: {active: false},
-        pagination: {active: false}
-    });
+//    $('.splash_content').width(2484)
+//    $('.splash_content').height(420)
+//    $('.splash_content').slidesjs({
+//        play: {auto: true},
+//        navigation: {active: false},
+//        pagination: {active: false}
+//    });
+
+    var interval = 5000;
+    var currentImage = 1;
+    var maxImage = 2;
+    nextSlider = function(){
+        topSliderFadeOut = function(){
+            $('.splash_content .slider').css('background', "#000000 url('images/lunxun_0"+nextImage+".jpg') no-repeat center");
+            $('.splash_content .slider').css('opacity', 1);
+            currentImage = nextImage
+        }
+
+        var nextImage = currentImage + 1;
+        if (nextImage > maxImage) nextImage = 1;
+        $('.splash_content .slider_back').css('background', "#000000 url('images/lunxun_0"+nextImage+".jpg') no-repeat center");
+        $('.splash_content .slider').animate({opacity: 0}, 1000, 'swing', topSliderFadeOut);
+    };
+    setInterval(nextSlider, interval)
 
 </script>
 </body>
