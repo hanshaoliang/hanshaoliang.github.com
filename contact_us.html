@@ -1,118 +1,170 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="css/style.css"  rel="stylesheet" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<title>sktlab_about</title>
-<script type="text/javascript">
+    <title>Contact US</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <style type="text/css">
+        @import url(http://cdn.tectite.com/formdesigneruser-v9.css);
+        #PoweredByLink{
+            display: none;
+        }
+    </style>
 
-    var mouseover_tid = [];
-    var mouseout_tid = [];
+    <script type="text/javascript">
+        $(function(){
+          $('#submit').click(function(event){
+              var hasError = false;
+             //validation
+              if ($('#form-email').val()){}
+              else{
+                  $('#form-email-error').html('Email is required')
+                  hasError = true;
+              }
+              if ($('#form-message').val()){}
+              else{
+                  $('#form-message-error').html('Message is required')
+                  hasError = true;
+              }
 
-    jQuery(document).ready(function(){
-        jQuery('#menus > li').each(function(index){
-            jQuery(this).hover(
+              if (hasError)
+                 event.preventDefault()
 
-                    function(){
-                        var _self = this;
-                        clearTimeout(mouseout_tid[index]);
-                        mouseover_tid[index] = setTimeout(function() {
-                            jQuery(_self).find('ul:eq(0)').slideDown(200);
-                        }, 400);
-                    },
-
-                    function(){
-                        var _self = this;
-                        clearTimeout(mouseover_tid[index]);
-                        mouseout_tid[index] = setTimeout(function() {
-                            jQuery(_self).find('ul:eq(0)').slideUp(200);
-                        }, 400);
-                    }
-
-            );
+          });
         });
-    });
 
-</script>
+
+    </script>
 
 
 </head>
 
 <body>
 <div class="top">
-	<div class="top_content">
-    	<div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-        <div id="menubar" >
-          <ul id="menus" class="menus">
-              <li  class="m_r">
-                  ABOUT US
-                  <ul class="dingwei_a">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
-                      </li>
-                      <li>
-                          <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
-                      </li>
-                
-                  </ul>
-              </li>
-              <li class="m_r"> 
-                  SERVICES
-                  <ul class="dingwei_b">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="services_product.html" class="yanse"  >Product Incubation</a>
-                      </li>
-                      <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_overview.html" class="yanse"  >Product Engineering</a>
-                      </li>
-                      <li>
-                          <a href="services_china.html" class="yanse" >China Market Entry</a>
-                      </li>
-                  </ul>
-              </li>
-              <li class="m_r">
-                  CAREERS
-                  <ul class="dingwei_c">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="us.html" class="yanse">us</a>
-                      </li>
-                      <li>
-                          <a href="china.html" class="yanse">china</a>
-                      </li>
-                  </ul>
-              </li>
+    <div class="top_content">
+        <div class="top_logo"><a href="index.html"><img src="images/logo.png"/></a></div>
+        <div id="menubar">
+            <ul id="menus" class="menus">
+                <li class="m_r">
+                    ABOUT US
+                    <ul class="dingwei_a">
+                        <li style="border-bottom:1px dashed  #BBB; ">
+                            <a href="about_Overview.html" class="yanse">OVERVIEW</a>
+                        </li>
+                        <li>
+                            <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="m_r">
+                    SERVICES
+                    <ul class="dingwei_b">
+                        <li style="border-bottom:1px dashed  #BBB; ">
+                            <a href="services_product.html" class="yanse">Product Incubation</a>
+                        </li>
+                        <li style="border-bottom:1px dashed  #BBB; ">
+                            <a href="services_overview.html" class="yanse">Product Engineering</a>
+                        </li>
+                        <li>
+                            <a href="services_china.html" class="yanse">China Market Entry</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="m_r">
+                    CAREERS
+                    <ul class="dingwei_c">
+                        <li style="border-bottom:1px dashed  #BBB; ">
+                            <a href="us.html" class="yanse">us</a>
+                        </li>
+                        <li>
+                            <a href="china.html" class="yanse">china</a>
+                        </li>
+                    </ul>
+                </li>
               <span class="no_boder" onClick="window.open('contact_us.html','_self');">
                   CONTACT US
               </span>
 
-          </ul>
-      </div>
-    </div>
-    
-    
-    
-    
-    
-    </div>
-</div>
-<div class="splash_zi_zi"><img src="images/diqiu.jpg" /></div>
-<div class="splash_shadowb"><img src="images/06.jpg" /></div>
-<div class="content">
-	<div class="content_mianbaoxie"><a href="index.html">Home</a>  > <a href="#">Contact Us</a></div>
-    <div class="content_bt"><img src="images/contactus.jpg" /></div>
-    <div class="content_new">
-		<div style="margin-left:10px; line-height:28px; font-size:14px; color:#3d3d3d;">
-        Email: info@sktlab.com<br /><br />
-
-U.S.Office:  303 Twin Dolphin Drive, 6th Floor, Redwood City, CA 94065 <br />
-Phone:  (650) 288-6762 <br />
-Fax:  (650) 288-6762<br /><br />
-
-China Office: Pusheng410,Xi'an Software Park,Xi,an P.R.China<br />
-Phone: +(86)029-89384252<br />
-Fax: +(86)029-89384252<br />
+            </ul>
         </div>
+    </div>
+
+
+</div>
+</div>
+<div class="splash_zi_zi"><img src="images/diqiu.jpg"/></div>
+<div class="splash_shadowb"><img src="images/06.jpg"/></div>
+<div class="content">
+    <div class="content_mianbaoxie"><a href="index.html">Home</a> > <a href="#">Contact Us</a></div>
+    <div class="content_bt"><img src="images/contactus.jpg"/></div>
+    <div class="content_new">
+        <div style="margin-left:10px; line-height:28px; font-size:14px; color:#3d3d3d;">
+            Email: info@sktlab.com<br/><br/>
+
+            U.S.Office:  303 Twin Dolphin Drive, 6th Floor, Redwood City, CA 94065 <br/>
+            Phone:  (650) 288-6762 <br/>
+            Fax:  (650) 288-6762<br/><br/>
+
+            China Office: Pusheng410,Xi'an Software Park,Xi,an P.R.China<br/>
+            Phone: +(86)029-89384252<br/>
+            Fax: +(86)029-89384252<br/>
+        </div>
+    </div>
+    <div class="message-form">
+        <div class="TectiteForm">
+            <form id="Contact_Form" name="Contact_Form" method="post" enctype="multipart/form-data" action="http://www.tectite.com/hosted/002137/hanshaoliang.github.io/formmail.php" target="_blank">
+                <h1 class="TectiteFormDesignerHeading" id="heading1">Or Leave A Message</h1>
+                <div class="TectiteFormDesignerField">
+                    <input type="text" id="form-name" name="FullName" placeholder="Your name (optional)"/>
+                    <span id="form-name-error"></span>
+                </div>
+                <div class="TectiteFormDesignerField">
+                    <input type="text" id="form-email" name="EmailAddr" placeholder="Your email (required)"/>
+                    <span id="form-email-error" class="text-error"></span>
+                </div>
+                <div class="TectiteFormDesignerField">
+                    <textarea id="form-message" name="Message" rows="6" cols="40" placeholder="Your message (required)"></textarea>
+                    <span id="form-message-error" class="text-error"></span>
+                </div>
+                <div class="TectiteFormDesignerField TectiteButtonField">
+                    <input type="submit" id="submit" value="Submit" name="submit" class="btn btn-primary"/>
+                    <span class="TectiteAjaxProgress"></span>
+                </div>
+                <input type="hidden" id="tectiteformid" name="tectiteformid" value="1fb8e68f1e7090282b74d0085193491e" />
+                <a id="PoweredByLink" class="PoweredByFormMail" href="http://www.tectite.com/" target="_blank"><img id="PoweredByImg" src="http://www.tectite.com/images/FormMail_rnd_blue.png" alt="php form" title="Tectite FormMail" border="0" /></a>
+                <input type="hidden" name="required" value="EmailAddr:Your email address,Message:Your message" />
+                <input type="hidden" name="derive_fields" value="realname = FullName,email = EmailAddr" />
+                <input type="hidden" name="subject" value="Contact" />
+                <input type="hidden" name="good_url" value="" />
+                <input type="hidden" name="fmmode" value="auto" />
+            </form>
+        </div>
+        <div id="TectiteLink" style="clear:both;width:80%;margin:5px auto;text-align:center;">Visit Tectite for free <a href="http://www.tectite.com/">contact form</a> solutions.<script type="text/javascript">
+            if (document.getElementById("PoweredByLink"))
+                document.getElementById("TectiteLink").setAttribute("style","display:none;");
+        </script></div>
+        <script type="text/javascript" src="http://cdn.tectite.com/formtest-v2.js"></script>
+        <!--
+        You can modify this form in the future by
+        using the Form Designer at http://www.tectite.com/
+
+        *** Tectite Form Designer Start ***
+        5:C:d08d7f5224624cd500d64c2284705877:eJy9lUtvozAQx/NRIh97wkASMKdVs9lW6jZSu6n
+        UU2WCk3rFo8Wm+4j47uuxTSBd0lDt48Yw8x/P/GyPlyQgaFGU2ZxKipSxEwRjgkZnowe64CxNBIo
+        omZIdJ0601D4Iv2A04fkWEV8rHKMQV+yFpSgSxCXoAsNHaD1f2HcJNoSeF7mkazleCfgzsxGXc7B
+        UOY8mt5a7kBkWvJQsGz3wVc6fKwahUE/NCVZFhaYmXS5S1q5d9ppmzKZdVGnamPuqfjxp2ydIdgo
+        0vdDY9KKC74uqHOdWjF3LZ/kkeZFrQA7Z1fu02S3/qSKvu9nuaFpptfqhk3jGEd+w54qXLEFRrDp
+        6jWNK0AbaOgnDBRjuMBjK/phRnn5IkvLdNHBgcTBIMaYqBxPi33LBR7m4p7h4wMUbxkUt8Vn1Qre
+        9ZyQwVGjJ6BEyriWTtUmGMqHqxuw0+bL4ZmgSNLWbsS5SYS+V76Co/nv4JqfwTQGfPwyfSiqqOOO
+        yj96B83d2yn3buv/vBWvreovEDEhMhpGAtSVbSy7ZRoXy5AiRR54kLO8n0rTxRyw8pcabOGDTYIP
+        ZzAkdN3DjmZ84TjDBoeeHmL0DVm9fb0ELorruweO2bwAI9b/m0Zmzkr80NwKGPCWe+dBXUN2+1Ax
+        irs/1wWCHCQjHXb8LHd2EID2tGtHhANyr6ha3UKfxq+rUjgVbbXdDxKeiSFY3Vz1HjoNL7Zcwr1Q
+        HEbyyrxCFXeGy5Ns7VmrhJKp/Acu8K7g=:756
+        *** Tectite Form Designer End ***
+        -->
     </div>
     <div class="foot">Copyright 2013 SKT Lab. All rights reserved.</div>
 </div>
