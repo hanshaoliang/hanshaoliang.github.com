@@ -1,9 +1,6 @@
-
-jQuery(document).ready(function(){
-
+buildMenu = function() {
     var mouseover_tid = [];
     var mouseout_tid = [];
-
     jQuery('#menus > li').each(function(index){
         jQuery(this).hover(
 
@@ -24,5 +21,18 @@ jQuery(document).ready(function(){
             }
 
         );
+    });
+};
+
+jQuery(document).ready(function(){
+
+    if ($('#headerPlaceHolder').length == 0)
+        return;
+
+    $.get('_header.html', function(data){
+        html = $(data);
+        headerHtml = html.find('#_header').html();
+        $('#headerPlaceHolder').html(headerHtml);
+        buildMenu();
     });
 });
