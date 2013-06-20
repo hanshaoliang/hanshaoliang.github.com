@@ -79,7 +79,9 @@
             width: 130px;
             padding: 0;
             list-style: none;
-            background-color: red;
+            background:rgba(255,255,255,0.5);
+			filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+			border-radius: 0px 0px 10px 10px;
             display: none;
         }
 
@@ -113,13 +115,13 @@
                           <a href="services_product.html" class="yanse"  >Product Incubation</a>
                       </li>
                       <li style="border-bottom:1px dashed  #BBB; " class="second-level-menu-container">
-                          <a href="#">Product Engineering</a>
+                          <a href="#" style="text-decoration:none; color:#0132ad;">Product Engineering</a>
                           <ul class="second-level-menu">
                               <li>
-                                  North
+                                  <a href="overview.html" style="text-decoration:none; color:#0132ad;">Overview</a>
                               </li>
                               <li>
-                                  South
+                                  <a href="services_case.html" style="text-decoration:none; color:#0132ad;">Case Studies</a>
                               </li>
                           </ul>
                       </li>
@@ -158,6 +160,12 @@
 </div>
 <div class="splash_shadow"><img src="images/03.jpg" /></div>
 <div class="content"><img src="images/04.jpg" /></div>
+<div class="readmore">
+	<span class="sty_redmore" onClick="window.open('services_product.html','_self');"></span>
+    <span class="sty_redmore" style="margin-left:245px;" onclick="window.open('services_overview.html','_self');"></span>
+    <span class="sty_redmore" style="margin-left:235px;"  onclick="window.open('services_china.html','_self');"></span>
+</div>
+<div class="copright"></div>
 <script type="text/javascript" src="js/jquery.slides.min.js"></script>
 <script type="text/javascript">
 //    $('.splash_content').width(2484)

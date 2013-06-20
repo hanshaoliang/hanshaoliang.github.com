@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<title>Sktlab--Ideas brought to life</title>
 <link href="css/style.css"  rel="stylesheet" type="text/css" />
-<link href="css/normalize.css"  rel="stylesheet" type="text/css" />
-<link  href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>sktlab</title>
 <script type="text/javascript">
 
-    var mouseover_tid = [];
-    var mouseout_tid = [];
-
     jQuery(document).ready(function(){
+
+        var mouseover_tid = [];
+        var mouseout_tid = [];
+
         jQuery('#menus > li').each(function(index){
             jQuery(this).hover(
 
@@ -36,122 +33,77 @@
 
             );
         });
+
+
+        //second level menu
+        $('.second-level-menu-container').hover(
+                function(){
+                    var _self = this;
+                    jQuery(_self).find('ul:eq(0)').slideDown(200);
+                },
+
+                function(){
+                    var _self = this;
+                    jQuery(_self).find('ul:eq(0)').slideUp(200);
+                }
+        );
+
     });
 
 </script>
     <style type="text/css">
-
-        #menus{
-            margin: 38px 0 0 250px;
-            overflow: hidden;
-			font-size:12px;
+        .splash_content{
+            height: 420px;
+            background-color: #000000;
+            position: relative;
         }
-
-        #menus > li{
-			text-transform:uppercase;
-			width:90px;
-			height:24px;
-			line-height:24px;
-            float: left;
-            list-style: none;
-			text-align:center;
-			cursor:pointer;
-	        }
-		#menus > li:hover{
-			width:88px;
-			height:23px;
-			line-height:23px;
-			border-top:1px solid #d8d8d8;
-			border-left:1px solid #d8d8d8;
-			border-right:1px solid #d8d8d8;
-			background:#fff;
-			color:#ffa200;
-			z-index:1999;
-	        }
-		.no_boder{
-			text-transform:uppercase;
-			width:90px;
-			height:24px;
-			line-height:24px;
-            float: left;
-            list-style: none;
-			text-align:center;
-			
-			}
-			.no_boder:hover{
-			width:90px;
-			height:24px;
-			line-height:24px;
-			color:#ffa200;
-			z-index:1999;
-			cursor:pointer;
-				}
-.m_r{
-	margin-right: 5px;
-	}
-        /*#menus > li > a{
-            display: block;
-			text-align:center;
-            color: #000000;
-            text-decoration: none;
-        }
-        #menu a:hover{
-			color:#ffa200;
-        }*/
-
-        #menus > li > ul{
+        .slider-image{
+            height: 420px;
             position: absolute;
-            padding:10px 5px 5px 5px;
-            z-index: 1000;
+            left: 0;
+            right: 0;
+        }
+        .slider{
+            background: #000000 url('images/lunxun_01.jpg') no-repeat center ;
+            z-index: 100;
+        }
+
+        .second-level-menu-container{
+            position: relative;
+        }
+        /* menu */
+        .second-level-menu{
+            position: absolute;
+            left: 175px;
+            top: 0;
+            width: 130px;
+            padding: 0;
+            list-style: none;
+            background:rgba(255,255,255,0.5);
+			filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+			border-radius: 0px 0px 10px 10px;
             display: none;
-			background:#FFF;
-			border-bottom:1px solid #d8d8d8;
-			border-left:1px solid #d8d8d8;
-			border-right:1px solid #d8d8d8;
-			box-shadow: 0px 5px 4px #010;
         }
-.dingwei_a{
-	margin: 0px 0px 0px -15px;
-	}
-.dingwei_b{
-	width:135px;
-	margin: 0px 0px 0px -24px;
-	}
-.dingwei_c{
-	width:84px;
-	margin: 0px 0px 0px -3px;
-	}
-	
-	
-        #menus > li > ul > li{
-			display:block;
-			font-size:11px;
-			
-        }
-		.yanse{
-			color:#0132ad;
-			line-height:24px;
-			}
-		.yanse:hover{
-			color:#ffa200;
-			}
+
 
     </style>
+
 </head>
+
 <body>
-<div class="zt_body">
-  <div class="header">
-   	<div class=" header_left"><a href="index.html"><img src="images/logo.png" /></a></div>
-      <div id="menubar" >
+<div class="top">
+	<div class="top_content">
+    	<div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+        <div id="menubar" >
           <ul id="menus" class="menus">
               <li  class="m_r">
                   ABOUT US
                   <ul class="dingwei_a">
                       <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="overview.html"  class="yanse"  >OVERVIEW</a>
+                          <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
                       </li>
                       <li>
-                          <a href="management.html" class="yanse">MANAGEMENT TEAM</a>
+                          <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
                       </li>
                 
                   </ul>
@@ -162,25 +114,30 @@
                       <li style="border-bottom:1px dashed  #BBB; " >
                           <a href="services_product.html" class="yanse"  >Product Incubation</a>
                       </li>
-                      <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_overview.html" class="yanse"  >Overview</a>
-                      </li>
-                       <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_case.html" class="yanse"  >Case Studies</a>
+                      <li style="border-bottom:1px dashed  #BBB; " class="second-level-menu-container">
+                          <a href="#" style="text-decoration:none; color:#0132ad;">Product Engineering</a>
+                          <ul class="second-level-menu">
+                              <li>
+                                  <a href="overview.html" style="text-decoration:none; color:#0132ad;">Overview</a>
+                              </li>
+                              <li>
+                                  <a href="services_case.html" style="text-decoration:none; color:#0132ad;">Case Studies</a>
+                              </li>
+                          </ul>
                       </li>
                       <li>
                           <a href="services_china.html" class="yanse" >China Market Entry</a>
                       </li>
                   </ul>
               </li>
-              <li  style=" margin-right:10px;">
+              <li class="m_r">
                   CAREERS
                   <ul class="dingwei_c">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="us.html" class="yanse">US</a>
+                      <li style="border-bottom:1px dashed  #BBB; ">
+                          <a href="us.html" class="yanse">us</a>
                       </li>
                       <li>
-                          <a href="china.html" class="yanse">China</a>
+                          <a href="china.html" class="yanse">china</a>
                       </li>
                   </ul>
               </li>
@@ -191,6 +148,8 @@
           </ul>
       </div>
     </div>
+    </div>
+</div>
     <div class="gg_new">
     	<img src="images/gg_04.jpg" />
     </div>

@@ -191,7 +191,7 @@ body{
             display: none;
 			background:rgba(255,255,255,0.5);
 			filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
-			box-radius: 0px 0px 5px 5px;
+			
 			/*border-bottom:1px solid #d8d8d8;
 			border-left:1px solid #d8d8d8;
 			border-right:1px solid #d8d8d8;
