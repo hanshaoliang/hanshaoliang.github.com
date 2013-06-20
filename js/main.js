@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
     if ($('#headerPlaceHolder').length == 0)
         return;
 
-    $.get('_header.html', function(data){
+    $.get('header.html', function(data){
         html = $(data);
         headerHtml = html.find('#_header').html();
         $('#headerPlaceHolder').html(headerHtml);
