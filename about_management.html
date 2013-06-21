@@ -1,100 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="css/style.css"  rel="stylesheet" type="text/css" />
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <title>sktlab_about</title>
-<script type="text/javascript">
-
-    var mouseover_tid = [];
-    var mouseout_tid = [];
-
-    jQuery(document).ready(function(){
-        jQuery('#menus > li').each(function(index){
-            jQuery(this).hover(
-
-                    function(){
-                        var _self = this;
-                        clearTimeout(mouseout_tid[index]);
-                        mouseover_tid[index] = setTimeout(function() {
-                            jQuery(_self).find('ul:eq(0)').slideDown(200);
-                        }, 400);
-                    },
-
-                    function(){
-                        var _self = this;
-                        clearTimeout(mouseover_tid[index]);
-                        mouseout_tid[index] = setTimeout(function() {
-                            jQuery(_self).find('ul:eq(0)').slideUp(200);
-                        }, 400);
-                    }
-
-            );
-        });
-    });
-
-</script>
-
-
 </head>
-
 <body>
 <div class="top">
-	<div class="top_content">
-    	<div class="top_logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-        <div id="menubar" >
-          <ul id="menus" class="menus">
-              <li  class="m_r">
-                  ABOUT US
-                  <ul class="dingwei_a">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="about_Overview.html"  class="yanse"  >OVERVIEW</a>
-                      </li>
-                      <li>
-                          <a href="about_management.html" class="yanse">MANAGEMENT TEAM</a>
-                      </li>
-                
-                  </ul>
-              </li>
-              <li class="m_r"> 
-                  SERVICES
-                  <ul class="dingwei_b">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="services_product.html" class="yanse"  >Product Incubation</a>
-                      </li>
-                      <li style="border-bottom:1px dashed  #BBB; ">
-                          <a href="services_overview.html" class="yanse"  >Product Engineering</a>
-                      </li>
-                      <li>
-                          <a href="services_china.html" class="yanse" >China Market Entry</a>
-                      </li>
-                  </ul>
-              </li>
-              <li class="m_r">
-                  CAREERS
-                  <ul class="dingwei_c">
-                      <li style="border-bottom:1px dashed  #BBB; " >
-                          <a href="us.html" class="yanse">US</a>
-                      </li>
-                      <li>
-                          <a href="china.html" class="yanse">China</a>
-                      </li>
-                  </ul>
-              </li>
-              <span class="no_boder" onClick="window.open('contact_us.html','_self');">
-                  CONTACT US
-              </span>
-
-          </ul>
-      </div>
-    </div>
-    
-    
-    
-    
-    
-    </div>
+	<div id="headerPlaceHolder" class="top_content"></div>
 </div>
 <div class="splash_zi"><img src="images/05.jpg" /></div>
 <div class="splash_shadowb"><img src="images/06.jpg" /></div>

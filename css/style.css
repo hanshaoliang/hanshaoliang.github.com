@@ -252,3 +252,21 @@ body{
 	margin-top:80px;
 	margin-bottom:40px;
 	}
+
+
+.second-level-menu-container{
+	position: relative;
+}
+	/* menu */
+.second-level-menu{
+	position: absolute;
+	left: 175px;
+	top: 0;
+	width: 130px;
+	padding: 0;
+	list-style: none;
+	background:rgba(255,255,255,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+}
