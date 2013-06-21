@@ -31,7 +31,7 @@ jQuery(document).ready(function(){
 
     $.get('header.html', function(data){
         html = $(data);
-        headerHtml = html.find('.headerContent').html();
+        headerHtml = $(html[1]).html()
         $('#headerPlaceHolder').html(headerHtml);
         buildMenu();
     });
