@@ -1,14 +1,27 @@
-body{
-    background-color: #645e4f;
+html, body{
+    background-color: #000000;
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    position: relative;
+    height: 100%;
 }
 
 .header-container{
     background: url('header-bg.jpg'), repeat-x;
     overflow: hidden;
+    height: 109px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
 }
+
 
 .header{
     width: 980px;
@@ -40,11 +53,16 @@ body{
     color: #FFCA00;
 }
 .viewer{
-    margin: 0 auto;
-    position: relative;
-    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-.viewer .mask{
+.viewer{
+    background: #000000;
+}
+.mask{
     background-color: #000000;
     opacity: 0.5;
     position: absolute;
@@ -52,7 +70,7 @@ body{
     bottom: 0;
     width: 100%;
 }
-.viewer .mask-text{
+.mask-text{
     position: absolute;
     top: 0;
     width: 100%;
@@ -60,38 +78,33 @@ body{
     font-size: 1.5em;
     text-align: center;
     vertical-align: middle;
-    padding-top: 7em;
+    padding-top: 10em;
 }
-.viewer .mask-text a{
+.mask-text a{
     color: #FFCB00;
     text-decoration: none;
 }
 
 .content{
-    border: 1px solid #645e4f;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(150, 150, 150, 1);
     font-weight: normal;
-    background-color: #FFFDF5;
-    padding: 1em 1em;
+    padding-top: 200px;
 }
-.content h3{
+.content h2{
     font-weight: normal;
 }
 
-.intro{
-    color: #FDFDFD;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: #5E5849;
-    padding: 1.5em 0;
-}
-.intro a{
-    text-decoration: none;
-    color: #FFCB00;
-}
 .footer{
-    opacity: 0.7;
+    position: absolute;
     color: #FDFDFD;
     text-align: center;
     font-size: 0.7em;
     padding: 1.3em 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
 }
