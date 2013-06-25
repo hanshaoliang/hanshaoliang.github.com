@@ -22,19 +22,6 @@ buildMenu = function() {
 
         );
     });
-	
-	  //second level menu
-        $('.second-level-menu-container').hover(
-                function(){
-                    var _self = this;
-                    jQuery(_self).find('ul:eq(0)').slideDown(200);
-                },
-
-                function(){
-                    var _self = this;
-                    jQuery(_self).find('ul:eq(0)').slideUp(200);
-                }
-        );	
 };
 
 
@@ -48,5 +35,11 @@ jQuery(document).ready(function(){
         headerHtml = $(html[1]).html()
         $('#headerPlaceHolder').html(headerHtml);
         buildMenu();
+        //highlight menu
+        key = $('#headerPlaceHolder').data('menu-key')
+        if (key){
+            $("#menus li[data-menu-key="+key+"]").addClass('active');
+        }
+
     });
 });
