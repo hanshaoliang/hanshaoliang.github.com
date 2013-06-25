@@ -69,19 +69,7 @@ footer{
             padding: 10px;
         }
 
-.sty_redmore{
-	cursor:pointer;
-	display:block;
-	float:left;
-	width:94px;
-	height:13px;
-	background:url(../images/readmore.jpg) repeat scroll 0px 0px;
-	}
-.copright{
-	background:url(../images/copright.jpg) no-repeat;
-	width:222px;
-	height:14px;
-	margin: 0 auto;
-	margin-top:80px;
-	margin-bottom:40px;
-	}
+.splash-image img{
+    display: block;
+
+}
