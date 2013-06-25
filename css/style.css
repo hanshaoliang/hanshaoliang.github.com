@@ -71,5 +71,8 @@ footer{
 
 .splash-image img{
     display: block;
-
+}
+.page-doc h4, .page-doc h3{
+    font-weight: normal;
+    color: #ffa200;
 }
