@@ -16,8 +16,9 @@ header{
     overflow: hidden;
 }
 footer{
-    margin-top: 20px;
+    margin-top: 80px;
     text-align: center;
+	font-size:12px;
 }
 
 
@@ -37,15 +38,18 @@ footer{
         #menus > li{
             float: left;
             padding: 5px 10px;
+			margin-left:40px;
+			border-radius:5px 5px 0px 0px;
 	        }
         #menus  li:hover{
-            background-color: #666666;
+			background-color:rgba(0,0,0,0.1);
         }
 		#menus li:hover a{
             color:#ffa200;
 	        }
         #menus li.active{
-            background-color: #666666;
+            /*background-color: #666666;*/
+			
         }
         #menus li.active a{
             color:#ffa200;
