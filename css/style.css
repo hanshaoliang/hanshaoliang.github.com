@@ -39,6 +39,7 @@ body{
 	margin:0 auto;
 	}
 	.splash_shadowb{
+	background:url(../images/06.jpg) no-repeat scroll 0px -3px;
 	width:916px;
 	height:14px;
 	margin:0 auto;
@@ -54,9 +55,37 @@ body{
 	background-repeat:no-repeat;
 	background-position:center;*/
 	}
+.splash_overview{
+	height:283px;
+	text-align:center;
+	background:url(../images/08.jpg) no-repeat center;
+	}
+.splash_manage{
+	height:283px;
+	text-align:center;
+	background:url(../images/05.jpg) no-repeat center;
+	}
+.splash_product_in{
+	height:283px;
+	text-align:center;
+	background:url(../images/product-incubation.jpg) no-repeat center;
+	}
+.lanse{
+	background:url(../images/lanse.jpg) no-repeat center;
+	}
+.loufang{
+	background:url(../images/loufang.jpg) no-repeat center;
+	}
+.pusheng{
+	background:url(../images/shanghai.jpg) no-repeat center;
+	}
+.amkan{
+	background:url(../images/amrkan.jpg) center no-repeat;
+	}
 .splash_zi_zi{
 	height:283px;
 	text-align:center;
+	background:url(../images/diqiu.jpg) center no-repeat;
 /*	background-image:url(../images/05.jpg);
 	background-repeat:no-repeat;
 	background-position:center;*/
