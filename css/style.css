@@ -12,6 +12,76 @@ body{
 	margin:0;
 	padding:0;
 	}
+img{
+	border:none;
+	}
+.top_line{
+	background:url(../images/top_bg.jpg) repeat-x scroll 0px -3px;
+	height:50px;
+	}
+.top_line_content{
+	width:960px;
+	margin:auto;
+	overflow:hidden;
+	}
+.top_line_content a{
+	display:block;
+	float:left;
+	width:30px;
+	height:30px;
+	margin-top:10px;
+	margin-right:10px;
+	}
+.twitter{
+	background:url(../images/ico_btn.png) no-repeat scroll 0px 0px;
+	}
+
+.face{
+	background:url(../images/ico_btn.png) no-repeat scroll -38px 0px;
+	}
+.linkedin{
+	background:url(../images/ico_btn.png) no-repeat scroll -76px 0px;
+	}	
+.blogger{
+	background:url(../images/ico_btn.png) no-repeat scroll -114px 0px;
+	}	
+.plus{
+	background:url(../images/ico_btn.png) no-repeat scroll -152px 0px;
+	}		
+.pinterest{
+	background:url(../images/ico_btn.png) no-repeat scroll -190px 0px;
+	}	
+.rss{
+	background:url(../images/ico_btn.png) no-repeat scroll -228px 0px;
+	}		
+.custom{
+	background:url(../images/ico_btn.png) no-repeat scroll -266px 0px;
+	}		
+.top_line_content span{
+	display:block;
+	width:165px;
+	height:22px;
+	padding-top:8px;
+	float:left;
+	margin-top:10px;
+	margin-right:10px;
+	background: #DDD;
+	border-radius:4px;
+	font-size:14px;
+	text-align:center;
+	text-shadow:0px 1px 1px rgba(255,255,255,1);
+	cursor:pointer;
+	}
+.top_line_content span:hover{
+	border-radius:4px;
+	background: #f59c00;
+	-webkit-transition: background .5s linear;
+	-moz-transition: background .5s linear;
+	-ms-transition: background .5s linear;
+	-o-transition: background .5s linear;
+	transition: background .5s linear;
+	
+	}
 .top{
 	height:92px;
 	overflow:hidden;
@@ -109,7 +179,7 @@ body{
 	font-size:14px;
 	}
 	.content_ct_b{
-	background:url(../images/overview.jpg) no-repeat scroll 8px 20px;
+		background:url(../images/overview.jpg) no-repeat scroll 8px 20px;
 	padding-top:94px;
 	font-family:Arial, Helvetica-light, sans-serif;
 	font-size:14px;

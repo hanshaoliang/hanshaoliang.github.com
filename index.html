@@ -12,16 +12,34 @@
 <style type="text/css">
         .splash_content{
             height: 420px;
-            background-color: #000000;
+            background-color: #fff;
             position: relative;
         }
         .camera_wrap .camera_pag .camera_pag_ul {
             text-align: center;
         }
+        .camera_commands{
+            display: none;
+        }
 
 </style>
 </head>
 <body>
+<div class="top_line">
+	<div class="top_line_content">
+    	<div style="overflow:hidden; float:right;">
+    	<a href="#" class="twitter"></a>
+        <a href="#" class="face"></a>
+        <a href="#" class="linkedin"></a>
+        <a href="#" class="blogger"></a>
+        <a href="#" class="plus"></a>
+        <a href="#" class="pinterest"></a>
+        <a href="#" class="rss"></a>
+        <a href="#" class="custom"></a>
+        <span class="btn_qu" onClick="window.open('contact_us.html','_self');">Request a Quote</span>
+       </div> 
+    </div>
+</div>
 <div class="top">
 	<div id="headerPlaceHolder" class="top_content"></div>
     </div>
@@ -29,15 +47,18 @@
 <div class="splash">
 	<div class="splash_content">
         <div data-src="images/lunxun_01.jpg"></div>
+        <div data-src="images/lunxun_02.jpg"></div>
         <div data-src="images/lunxun_03.jpg"></div>
         <div data-src="images/lunxun_04.jpg"></div>
+        <div data-src="images/lunxun_05.jpg"></div>
+        <div data-src="images/lunxun_06.jpg"></div>
     </div>
 </div>
 <div class="splash_shadow"><img src="images/03.jpg" /></div>
 <div class="content"><img src="images/04.jpg" /></div>
 <div class="readmore">
 	<span class="sty_redmore" onClick="window.open('services_product.html','_self');"></span>
-    <span class="sty_redmore" style="margin-left:245px;" onclick="window.open('services_overview.html','_self');"></span>
+    <span class="sty_redmore" style="margin-left:245px;" onClick="window.open('services_overview.html','_self');"></span>
     <span class="sty_redmore" style="margin-left:235px;"  onclick="window.open('services_china.html','_self');"></span>
 </div>
 <div class="copright"></div>
@@ -48,7 +69,10 @@
         mobileAutoAdvance: false,
         easing: 'swing',
         fx: 'simpleFade',
-        height: '420px'
+        height: '420px',
+        navigation: false,
+        navigationHover: false,
+        hover:false
 
     });
 </script>
