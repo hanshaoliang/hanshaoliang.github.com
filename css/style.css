@@ -281,7 +281,7 @@ img{
         #menus > li > ul{
             position: absolute;
 			border-radius: 0px 0px 10px 10px;
-            padding:10px 5px 5px 5px;
+            padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
 			background:rgba(255,255,255,0.5);
@@ -355,7 +355,7 @@ img{
 	/* menu */
 .second-level-menu{
 	position: absolute;
-	left: 175px;
+	left: 170px;
 	top: 0;
 	width: 130px;
 	padding: 0;
