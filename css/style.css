@@ -71,6 +71,7 @@ img{
 	text-align:center;
 	text-shadow:0px 1px 1px rgba(255,255,255,1);
 	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
 	}
 .top_line_content span:hover{
 	border-radius:4px;
