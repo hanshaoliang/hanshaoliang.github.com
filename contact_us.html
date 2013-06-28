@@ -4,10 +4,10 @@
     <title>Contact US</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/formdesigneruser-v9.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <style type="text/css">
-        @import url(http://cdn.tectite.com/formdesigneruser-v9.css);
         #PoweredByLink{
             display: none;
         }
@@ -21,12 +21,17 @@
             $('#submit').click(function(event){
                 var hasError = false;
                 //validation
-                if ($('#form-email').val()){}
+                if( $('#form-email').val()){
+                    $('#form-email-error').html('')
+                }
                 else{
                     $('#form-email-error').html('Email is required')
                     hasError = true;
                 }
-                if ($('#form-message').val()){}
+
+                if ($('#form-message').val()){
+                    $('#form-message-error').html('')
+                }
                 else{
                     $('#form-message-error').html('Message is required')
                     hasError = true;
