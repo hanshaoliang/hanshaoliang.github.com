@@ -65,11 +65,12 @@ img{
 	float:left;
 	margin-top:10px;
 	margin-right:10px;
-	background: #DDD;
+	background: #0032ad;
+	color:#EEE;
 	border-radius:4px;
 	font-size:14px;
 	text-align:center;
-	text-shadow:0px 1px 1px rgba(255,255,255,1);
+	/*text-shadow:0px 1px 1px rgba(255,255,255,1);*/
 	cursor:pointer;
 	font-family:Arial, Helvetica, sans-serif;
 	}
@@ -106,8 +107,9 @@ img{
 	}
 .splash_shadow{
 	width:960px;
-	height:113px;
+	height:89px;
 	margin:0 auto;
+	margin-top:12px;
 	}
 	.splash_shadowb{
 	background:url(../images/06.jpg) no-repeat scroll 0px -3px;
@@ -143,6 +145,9 @@ img{
 	}
 .lanse{
 	background:url(../images/lanse.jpg) no-repeat center;
+	}
+.uis{
+	background:url(../images/uis.jpg) no-repeat center;
 	}
 .loufang{
 	background:url(../images/loufang.jpg) no-repeat center;
@@ -197,7 +202,7 @@ img{
 		}
 	.content_new{
 		font-family:Arial, Helvetica-light, sans-serif;
-		font-size:14px;
+		font-size:16px;
 		overflow:auto;
 		}
 	.content_new ul{
@@ -238,7 +243,7 @@ img{
 	
 #menus{
             overflow: hidden;
-			font-size:14px;
+			font-size:15px;
 			margin:36px 0px 0px 340px;
 			font-family:Arial, Helvetica-Regular, sans-serif;
         }
@@ -314,7 +319,7 @@ img{
 	
         #menus > li > ul > li{
 			display:block;
-			font-size:12px;
+			font-size:13px;
 			text-decoration:none;
 			line-height:34px;
 			
