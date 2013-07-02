@@ -26,10 +26,13 @@
         jQuery(document).ready(function(){
             var width = $('.viewer').width();
             var height = $('.viewer').height();
-            SKta.Application.installViewer(
-                    {container:"panoViewer",height:height,width:width},
-                    {panorama:{poiId:'f1fd33941afd4d1883f8be3b58109f0a'}}
-            );
+            $('#google-view').width(width);
+            $('#google-view').height(height);
+
+//            SKta.Application.installViewer(
+//                    {container:"panoViewer",height:height,width:width},
+//                    {panorama:{poiId:'f1fd33941afd4d1883f8be3b58109f0a'}}
+//            );
 
             $('.header-container').hover(
                 function(){
@@ -53,6 +56,9 @@
 <div class="container">
     <div class="viewer">
         <div id="panoViewer"></div>
+        <iframe id="google-view" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=303+Twin+Dolphin+Dr,+Redwood+City,+CA,+USA&amp;aq=0&amp;oq=303+Twin+Dolphin+Drive,+6th+Floor,+Redwood+Shores&amp;sll=37.0625,-95.677068&amp;sspn=42.03917,72.773438&amp;ie=UTF8&amp;hq=&amp;hnear=303+Twin+Dolphin+Dr,+Redwood+City,+San+Mateo,+California+94065&amp;ll=37.523311,-122.259154&amp;spn=0.010313,0.017767&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=37.52408,-122.259259&amp;panoid=hmRcHr5IyLW7IxZa8uh2zw&amp;cbp=12,141.6,,0,-1.41&amp;output=svembed"></iframe>
+
     </div>
     <div class="mask"></div>
     <div class="mask-text">
