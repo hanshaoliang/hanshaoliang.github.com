@@ -57,33 +57,7 @@ img{
 .custom{
 	background:url(../images/ico_btn.png) no-repeat scroll -220px 0px;
 	}		
-.top_line_content span{
-	display:block;
-	width:165px;
-	height:22px;
-	padding-top:8px;
-	float:left;
-	margin-top:10px;
-	margin-right:10px;
-	background: #0032ad;
-	color:#EEE;
-	border-radius:4px;
-	font-size:14px;
-	text-align:center;
-	/*text-shadow:0px 1px 1px rgba(255,255,255,1);*/
-	cursor:pointer;
-	font-family:Arial, Helvetica, sans-serif;
-	}
-.top_line_content span:hover{
-	border-radius:4px;
-	background: #f59c00;
-	-webkit-transition: background .5s linear;
-	-moz-transition: background .5s linear;
-	-ms-transition: background .5s linear;
-	-o-transition: background .5s linear;
-	transition: background .5s linear;
-	
-	}
+
 .top{
 	height:92px;
 	overflow:hidden;
@@ -213,7 +187,7 @@ img{
 		.content_new li{
 		list-style:none;
 		padding-left:25px;
-		background:url(../images/blue.jpg) no-repeat scroll 10px 12px;
+		background:url(../images/blue.jpg) no-repeat scroll 10px 9px;
 		}
 .pic{
 	float:left;
@@ -295,13 +269,9 @@ img{
             padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
-			background:rgba(255,255,255,0.5);
+			background:rgba(255,255,255,.8);
 			filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
 			
-			/*border-bottom:1px solid #d8d8d8;
-			border-left:1px solid #d8d8d8;
-			border-right:1px solid #d8d8d8;
-			box-shadow: 0px 5px 4px #010;*/
         }
 .dingwei_a{
 	width:150px;
@@ -371,8 +341,45 @@ img{
 	width: 130px;
 	padding: 0;
 	list-style: none;
-	background:rgba(255,255,255,0.5);
+	background:rgba(255,255,255,.8);
 	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
 	border-radius: 0px 0px 10px 10px;
 	display: none;
 }
+
+.float_middle{
+	position:fixed;
+	right:1%;
+	top:50%;
+	overflow:auto;
+	background:rgba(255,255,255,.8);
+	padding:5px 0px 5px 10px;
+	border-radius:5px;
+	border:1px solid #AAA;
+	}
+.float_middle span{
+	display:block;
+	width:165px;
+	height:22px;
+	padding-top:8px;
+	float:left;
+	margin-top:10px;
+	margin-right:10px;
+	background: #0032ad;
+	color:#EEE;
+	border-radius:4px;
+	font-size:14px;
+	text-align:center;
+	/*text-shadow:0px 1px 1px rgba(255,255,255,1);*/
+	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.float_middle span:hover{
+	border-radius:4px;
+	background: #f59c00;
+	-webkit-transition: background .5s linear;
+	-moz-transition: background .5s linear;
+	-ms-transition: background .5s linear;
+	-o-transition: background .5s linear;
+	transition: background .5s linear;
+		}
