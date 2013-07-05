@@ -16,8 +16,9 @@ img{
 	border:none;
 	}
 .top_line{
-	background:url(../images/top_bg.jpg) repeat-x scroll 0px -3px;
+	/*background:url(../images/top_bg.jpg) repeat-x scroll 0px -3px;*/
 	height:50px;
+	margin-top:80px;
 	}
 .top_line_content{
 	width:960px;
@@ -324,9 +325,9 @@ img{
 	background:url(../images/copright.jpg) no-repeat;
 	width:222px;
 	height:14px;
-	margin: 0 auto;
-	margin-top:80px;
-	margin-bottom:40px;
+	float:left;
+	display:block;
+	margin-top:17px;
 	}
 
 
@@ -359,7 +360,7 @@ img{
 	}
 .float_middle span{
 	display:block;
-	width:165px;
+	width:150px;
 	height:22px;
 	padding-top:8px;
 	float:left;
