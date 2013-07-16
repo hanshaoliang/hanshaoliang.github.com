@@ -218,7 +218,7 @@ img{
 	
 #menus{
             overflow: hidden;
-			font-size:17px;
+			font-size:18px;
 			margin:36px 0px 0px 340px;
 			font-family:Arial, Helvetica-Regular, sans-serif;
         }
@@ -275,12 +275,12 @@ img{
 			
         }
 .dingwei_a{
-	width:150px;
-	margin: 0px 0px 0px -30px;
+	width:180px;
+	margin: 0px 0px 0px -46px;
 	}
 .dingwei_b{
-	width:170px;
-	margin: 0px 0px 0px -40px;
+	width:200px;
+	margin: 0px 0px 0px -50px;
 	}
 .dingwei_c{
 	width:120px;
@@ -290,7 +290,7 @@ img{
 	
         #menus > li > ul > li{
 			display:block;
-			font-size:13px;
+			font-size:15px;
 			text-decoration:none;
 			line-height:34px;
 			
@@ -337,7 +337,7 @@ img{
 	/* menu */
 .second-level-menu{
 	position: absolute;
-	left: 170px;
+	left: 200px;
 	top: 0;
 	width: 130px;
 	padding: 0;
