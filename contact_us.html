@@ -40,7 +40,8 @@
 
                 if (hasError)
                     event.preventDefault()
-
+					
+				$('#form-message').val( $('#form-message').val() + '  Phone: ' + $('#form-phone').val())
             });
         });
 
