@@ -266,7 +266,7 @@ img{
 
         #menus > li > ul{
             position: absolute;
-			border-radius: 0px 0px 10px 10px;
+			border-radius: 0px 0px 0px 0px;
             padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
@@ -325,8 +325,8 @@ img{
 	background:url(../images/copright.jpg) no-repeat;
 	width:222px;
 	height:14px;
-	float:left;
 	display:block;
+	margin:0 auto;
 	margin-top:17px;
 	}
 
@@ -338,25 +338,25 @@ img{
 .second-level-menu{
 	position: absolute;
 	left: 200px;
-	top: 0;
-	width: 130px;
+	top: 0px;
+	width: 140px;
 	padding: 0;
 	list-style: none;
 	background:rgba(255,255,255,.8);
 	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 0px 0px;
 	display: none;
 }
 
 .float_middle{
-	position:absolute;
+	position:fixed;
 	overflow:auto;
 	background:rgba(255,255,255,.8);
 	padding:5px 0px 5px 10px;
 	border-radius:5px;
 	border:1px solid #AAA;
-	right:10px;
-	top: 421px;
+	right:1%;
+	top: 50%;
 	}
 .float_middle span{
 	display:block;
