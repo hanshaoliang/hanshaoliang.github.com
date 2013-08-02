@@ -8,16 +8,6 @@
     <link href="css/formdesigneruser-v9.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42863101-1', 'sktlab.com');
-  ga('send', 'pageview');
-
-</script>
     <style type="text/css">
         #PoweredByLink{
             display: none;
@@ -27,7 +17,7 @@
         }
     </style>
     <script type="text/javascript">
-        $(function(){
+       $(function(){
             $('#submit').click(function(event){
                 var hasError = false;
                 //validation
@@ -43,15 +33,48 @@
                     $('#form-message-error').html('')
                 }
                 else{
-                    $('#form-message-error').html('Project detail is required')
+                    $('#form-message-error').html('Message is required')
                     hasError = true;
                 }
-
                 if (hasError)
-                    event.preventDefault()
-				$('#form-message').val( $('#form-message').val() + '  Phone: ' + $('#form-phone').val())
+                    event.preventDefault();
+				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+$('#form-message').val()+'"}';
+				$.ajax(
+				{
+					url:"http://jiezu1.cloudapp.net:5000/email",
+					data:eval("("+emaildata+")"),
+					dataType:"json",
+					type:"GET",
+					timeout:5000,
+					async:false,
+					success:function(data){
+						//alert("Sent successful,We will contact you soon. Thanks!");
+						$('#form-name').val('');
+						$('#form-phone').val('');
+						$('#form-email').val('');
+						$('#company-name').val('');
+						$('#form-message').val('');
+						location.href="success.html";
+						//alert(123);
+					},
+					error:function(XMLHttpRequest, textStatus, errorThrow){
+						//alert(XMLHttpRequest);
+						//alert("Sent successful,We will contact you soon. Thanks!");
+						$('#form-name').val('');
+						$('#form-phone').val('');
+						$('#form-email').val('');
+						$('#company-name').val('');
+						$('#form-message').val('');
+						location.href="success.html";
+						//alert(errorThrow);
+					}
+				});	
+
+			
             });
         });
+
+
     </script>
 
     <style>
@@ -90,7 +113,7 @@
     </div>
     <div class="message-form" >
         <div class="TectiteForm">
-            <form id="Contact_Form" name="Contact_Form" method="post" enctype="multipart/form-data" action="http://www.tectite.com/hosted/002137/hanshaoliang.github.io/formmail.php" target="_blank">
+            <div id="Contact_Form" name="Contact_Form" >
                 <!--<h1 class="TectiteFormDesignerHeading" id="heading1">Or Leave A Message</h1>-->
                 <div class="TectiteFormDesignerField">
                     <input type="text" id="form-name" name="FullName" placeholder="Your name (optional)"/>
@@ -114,40 +137,10 @@
                     <input type="submit" id="submit" value="Submit" name="submit" class="btn btn-primary" style=" margin-left:10px;"/>
                     <span class="TectiteAjaxProgress"></span>
                 </div>
-                <input type="hidden" id="tectiteformid" name="tectiteformid" value="1fb8e68f1e7090282b74d0085193491e" />
-                <a id="PoweredByLink" class="PoweredByFormMail" href="http://www.tectite.com/" target="_blank"><img id="PoweredByImg" src="http://www.tectite.com/images/FormMail_rnd_blue.png" alt="php form" title="Tectite FormMail" border="0" /></a>
-                <input type="hidden" name="required" value="EmailAddr:Your email address,Message:Your message" />
-                <input type="hidden" name="derive_fields" value="realname = FullName,email = EmailAddr" />
-                <input type="hidden" name="subject" value="Contact" />
-                <input type="hidden" name="good_url" value="" />
-                <input type="hidden" name="fmmode" value="auto" />
-            </form>
-        </div>
-        <div id="TectiteLink" style="clear:both;width:80%;margin:5px auto;text-align:center;">Visit Tectite for free <a href="http://www.tectite.com/">contact form</a> solutions.<script type="text/javascript">
-            if (document.getElementById("PoweredByLink"))
-                document.getElementById("TectiteLink").setAttribute("style","display:none;");
-        </script></div>
-        <script type="text/javascript" src="http://cdn.tectite.com/formtest-v2.js"></script>
-        <!--
-        You can modify this form in the future by
-        using the Form Designer at http://www.tectite.com/
-
-        *** Tectite Form Designer Start ***
-        5:C:d08d7f5224624cd500d64c2284705877:eJy9lUtvozAQx/NRIh97wkASMKdVs9lW6jZSu6n
-        UU2WCk3rFo8Wm+4j47uuxTSBd0lDt48Yw8x/P/GyPlyQgaFGU2ZxKipSxEwRjgkZnowe64CxNBIo
-        omZIdJ0601D4Iv2A04fkWEV8rHKMQV+yFpSgSxCXoAsNHaD1f2HcJNoSeF7mkazleCfgzsxGXc7B
-        UOY8mt5a7kBkWvJQsGz3wVc6fKwahUE/NCVZFhaYmXS5S1q5d9ppmzKZdVGnamPuqfjxp2ydIdgo
-        0vdDY9KKC74uqHOdWjF3LZ/kkeZFrQA7Z1fu02S3/qSKvu9nuaFpptfqhk3jGEd+w54qXLEFRrDp
-        6jWNK0AbaOgnDBRjuMBjK/phRnn5IkvLdNHBgcTBIMaYqBxPi33LBR7m4p7h4wMUbxkUt8Vn1Qre
-        9ZyQwVGjJ6BEyriWTtUmGMqHqxuw0+bL4ZmgSNLWbsS5SYS+V76Co/nv4JqfwTQGfPwyfSiqqOOO
-        yj96B83d2yn3buv/vBWvreovEDEhMhpGAtSVbSy7ZRoXy5AiRR54kLO8n0rTxRyw8pcabOGDTYIP
-        ZzAkdN3DjmZ84TjDBoeeHmL0DVm9fb0ELorruweO2bwAI9b/m0Zmzkr80NwKGPCWe+dBXUN2+1Ax
-        irs/1wWCHCQjHXb8LHd2EID2tGtHhANyr6ha3UKfxq+rUjgVbbXdDxKeiSFY3Vz1HjoNL7Zcwr1Q
-        HEbyyrxCFXeGy5Ns7VmrhJKp/Acu8K7g=:756
-        *** Tectite Form Designer End ***
-        -->
-    </div>
-
+ 
+</div>
+</div>
+</div>
 </div>
 
 <div class="top_line">
