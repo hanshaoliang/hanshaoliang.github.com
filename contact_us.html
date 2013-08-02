@@ -37,9 +37,10 @@
                     $('#form-message-error').html('Message is required')
                     hasError = true;
                 }
-                if (hasError)
+                if (hasError){
                     event.preventDefault();
 					return;
+				}
 				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+$('#form-message').val()+'"}';
 				$.ajax(
 				{
