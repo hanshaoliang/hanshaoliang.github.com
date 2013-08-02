@@ -44,9 +44,7 @@ jQuery(document).ready(function(){
         return;
 
     $.get('header.html', function(data){
-        html = $(data);
-        headerHtml = $(html[1]).html()
-        $('#headerPlaceHolder').html(headerHtml);
+        $('#headerPlaceHolder').html(data);
         buildMenu();
         //highlight menu
         key = $('#headerPlaceHolder').data('menu-key')
