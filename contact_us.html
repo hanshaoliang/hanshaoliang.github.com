@@ -42,7 +42,7 @@
 				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+$('#form-message').val()+'"}';
 				$.ajax(
 				{
-					url:"http://127.0.0.1:5000/email",
+					url:"http://jiezu1.cloudapp.net:5000/email",
 					data:eval("("+emaildata+")"),
 					dataType:"json",
 					type:"GET",
