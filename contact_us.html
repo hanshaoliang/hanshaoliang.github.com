@@ -37,11 +37,41 @@
                     $('#form-message-error').html('Message is required')
                     hasError = true;
                 }
-
                 if (hasError)
-                    event.preventDefault()
-					
-				$('#form-message').val( $('#form-message').val() + '  Phone: ' + $('#form-phone').val())
+                    event.preventDefault();
+				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+$('#form-message').val()+'"}';
+				$.ajax(
+				{
+					url:"http://127.0.0.1:5000/email",
+					data:eval("("+emaildata+")"),
+					dataType:"json",
+					type:"GET",
+					timeout:5000,
+					async:false,
+					success:function(data){
+						//alert("Sent successful,We will contact you soon. Thanks!");
+						$('#form-name').val('');
+						$('#form-phone').val('');
+						$('#form-email').val('');
+						$('#company-name').val('');
+						$('#form-message').val('');
+						location.href="success.html";
+						//alert(123);
+					},
+					error:function(XMLHttpRequest, textStatus, errorThrow){
+						//alert(XMLHttpRequest);
+						//alert("Sent successful,We will contact you soon. Thanks!");
+						$('#form-name').val('');
+						$('#form-phone').val('');
+						$('#form-email').val('');
+						$('#company-name').val('');
+						$('#form-message').val('');
+						location.href="success.html";
+						//alert(errorThrow);
+					}
+				});	
+
+			
             });
         });
 
@@ -100,7 +130,7 @@
     </div>
                     <div class="message-form" >
                         <div class="TectiteForm">
-                            <form id="Contact_Form" name="Contact_Form" method="post" enctype="multipart/form-data" action="http://www.tectite.com/hosted/002137/hanshaoliang.github.io/formmail.php" target="_blank">
+                            <div id="Contact_Form" name="Contact_Form" >
                                 <!--<h1 class="TectiteFormDesignerHeading" id="heading1">Or Leave A Message</h1>-->
                                 <div class="content_bt_bb"><img src="images/leave_message.jpg"></div>
                                 <div class="TectiteFormDesignerField">
@@ -108,7 +138,7 @@
                                     <span id="form-name-error"></span>
                                 </div>
                                 <div class="TectiteFormDesignerField">
-                                    <input type="text"  id="form-name" name="name" rows="6" cols="40" placeholder="Your company name (optional)"></input>
+                                    <input type="text"  id="company-name" name="name" rows="6" cols="40" placeholder="Your company name (optional)"></input>
                                 </div>
                                 <div class="TectiteFormDesignerField">
                                     <input type="text"  id="form-phone" name="phone" rows="6" cols="40" placeholder="Your phone (optional)"></input>
@@ -125,20 +155,10 @@
                                     <input type="submit" id="submit" value="Submit" name="submit" class="btn btn-primary" style="margin-left:10px;"/>
                                     <span class="TectiteAjaxProgress"></span>
                                 </div>
-                                <input type="hidden" id="tectiteformid" name="tectiteformid" value="1fb8e68f1e7090282b74d0085193491e" />
-                                <a id="PoweredByLink" class="PoweredByFormMail" href="http://www.tectite.com/" target="_blank"><img id="PoweredByImg" src="http://www.tectite.com/images/FormMail_rnd_blue.png" alt="php form" title="Tectite FormMail" border="0" /></a>
-                                <input type="hidden" name="required" value="EmailAddr:Your email address,Message:Your message" />
-                                <input type="hidden" name="derive_fields" value="realname = FullName,email = EmailAddr" />
-                                <input type="hidden" name="subject" value="Contact" />
-                                <input type="hidden" name="good_url" value="" />
-                                <input type="hidden" name="fmmode" value="auto" />
-                            </form>
+                                
+                            </div>
                         </div>
-                        <div id="TectiteLink" style="clear:both;width:80%;margin:5px auto;text-align:center;">Visit Tectite for free <a href="http://www.tectite.com/">contact form</a> solutions.<script type="text/javascript">
-                            if (document.getElementById("PoweredByLink"))
-                                document.getElementById("TectiteLink").setAttribute("style","display:none;");
-                        </script></div>
-                        <script type="text/javascript" src="http://cdn.tectite.com/formtest-v2.js"></script>
+                       
                         <!--
                         You can modify this form in the future by
                         using the Form Designer at http://www.tectite.com/
