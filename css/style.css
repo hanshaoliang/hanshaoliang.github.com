@@ -392,3 +392,98 @@ img{
 	text-decoration:underline;
 	color:#006;
 	}
+	
+.add_box{
+	zoom:1;
+	overflow:auto;
+	background:#f5f5f5;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.add_box_content{
+	width:940px;
+	margin:0 auto;
+	}
+.box_slider_zongti{
+	width:940px;
+	margin:0 auto;
+	zoom:1;
+	overflow:hidden;
+	padding-top:20px;
+	}
+.box_slider_zongti a{
+	display:block;
+	}
+.box_left{
+	float:left;
+	width:25px;
+	height:12px;
+	background:url(../images/glyphicons-halflings.png) no-repeat scroll -0px -0px;
+	margin-top:5%;
+	transition:all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition:all .5s; /* Safari and Chrome */
+	-o-transition:all .5s; /* Opera */
+	}
+.box_left:hover{
+	background:url(../images/glyphicons-halflings.png) no-repeat scroll -0px -21px;
+	}	
+.box_right{
+	float:left;
+	margin-left:10px;
+	width:25px;
+	height:12px;
+	background:url(../images/glyphicons-halflings.png) no-repeat scroll -26px 0px;
+	margin-top:5%;
+	transition:all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition:all .5s; /* Safari and Chrome */
+	-o-transition:all .5s; /* Opera */
+	}
+.box_right:hover{
+	background:url(../images/glyphicons-halflings.png) no-repeat scroll -26px -21px;
+	}
+.box_slider{
+	float:left;
+	font-family:Arial, Helvetica-light, sans-serif;
+	width:850px;
+	line-height:28px;
+	font-size:16px;
+	border-radius:10px;
+	background:#fafafa;
+	padding:15px;
+	}
+
+.bt_box{
+	font-family: Arial, Helvetica-light, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	}
+/*.box_font{
+	-webkit-animation-name:'animations';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+    /*-webkit-animation-duration: 6s;/*动画持续时间*/
+   /* -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+    /*-webkit-animation-delay: 2s;*//*动画延迟时间*/
+    /*-webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+    /*-webkit-animation-direction: normal;/*定义动画方式  normal 为向前播放  另一个值是alternate，他的作用是，动画播放在第偶数次向前播放，第奇数次向反方向播放*/
+	/*}*/
+/*@-webkit-keyframes animations{
+	0%{-webkit-transform:translate(0);opacity:0;}
+	50%{-webkit-transform:translate(30px);opacity:1;}
+	70%{-webkit-transform:translate(35px);opacity:1;}
+	100%{-webkit-transform:translate(60px);opacity:0;}*/
+/*}	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
