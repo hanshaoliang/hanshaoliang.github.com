@@ -50,6 +50,60 @@
             height: 4px;
             width: 4px
         }
+		.content_left{
+			float:left;
+			width:333px;
+			height:201px;
+			overflow:hidden;
+			}
+		.content_left_top{
+			margin-top:17px;
+			margin-bottom:18px;
+			}
+		.content_left_content{
+			width:241px;
+			font-size:18px;
+			line-height:23px;
+			font-family:Arial, Helvetica, sans-serif;
+			color:#666;
+			}
+		.content_middle{
+			float:left;
+			width:341px;
+			height:201px;
+			overflow:hidden;
+			}
+		.content_middle_top{
+			margin-top:18px;
+			margin-left:6px;
+			margin-bottom:22px;
+			}
+		.content_middle_content{
+			font-size:18px;
+			line-height:23px;
+			font-family:Arial, Helvetica, sans-serif;
+			color:#666;
+			padding-left:8px;
+			width:272px;
+			}
+		.content_right{
+			float:left;
+			width:286px;
+			height:201px;
+			overflow:hidden;
+			}
+		.content_right_top{
+			margin-top:16px;
+			margin-bottom:21px;
+			margin-left:7px;
+			}
+		.content_right_content{
+			font-size:18px;
+			line-height:23px;
+			font-family:Arial, Helvetica, sans-serif;
+			color:#666;
+			padding-left:8px;
+			}
 </style>
 </head>
 <body>
@@ -71,7 +125,20 @@
 </div>
 <div style="clear:both; padding:0; margin:0;"></div>
 <div class="splash_shadow"><img src="images/03.jpg"></div>
-<div class="content"><img src="images/04.jpg" /></div>
+<div class="content">
+	<div class="content_left">
+    	<div class="content_left_top"><a href="services_product.html"><img src="images/content_left_top_img.jpg"></a></div>
+        <div class="content_left_content">We are passionate about<br> co-developing and commercializing great ideas. Experienced working with startups and their inspired vision as well as multinational</div>
+    </div>
+    <div class="content_middle">
+    	<div class="content_middle_top"><a href="services_overview.html"><img src="images/content_left_middle_img.jpg"></a></div>
+        <div class="content_middle_content">Our people are some of the best and most creative engineers in the world. Whether your project needs a single engineer working on a single platform, or a team of engineers working across</div>
+    </div>
+    <div class="content_right">
+    	<div class="content_right_top"><a href="services_china.html"><img src="images/content_right_img.jpg"></a></div>
+        <div class="content_right_content">China is where it's at. More and more US based software companies are recognizing that in order to compete, serving the China market is critical. To do this effectively, local partners are</div>
+    </div>
+</div>
 <div class="readmore">
 	<span class="sty_redmore" onClick="window.open('services_product.html','_self');"></span>
     <span class="sty_redmore" style="margin-left:248px;" onClick="window.open('services_overview.html','_self');"></span>
