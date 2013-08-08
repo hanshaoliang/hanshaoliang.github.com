@@ -33,9 +33,9 @@
 		</style>
 		<script type="text/javascript">
 			var o = 1;
-			var changeTime = 1000;
+			var changeTime = 8000;
 			function secta(o) {
-				for (z = 1; z < 5; z++) {
+				for (z = 1; z < 6; z++) {
 					box = document.getElementById("box_" + z);
 					if (z == o) {
 						box.style.display = "block";
@@ -48,12 +48,12 @@
 				if (o >= 2) {
 					o = o - 1;
 				}else {
-					o = 4;
+					o = 5;
 				}
 				secta(o);
 			}
 			function next() {
-				if (o <= 3) {
+				if (o <= 4) {
 					o = o + 1;
 				}else {
 					o = 1;
@@ -96,17 +96,80 @@
 			<div class="content_bt">
 				<img src="images/Overview_01.jpg">
 			</div>
-			<div class="content_new" >
-				<div class="float_middle" style="z-index:999;">
-					<span onClick="window.open('request-quote.html','_self');">
-						Request a Quote
-					</span>
-					<div style="clear:both">
-					</div>
-					<div style="line-height:34px; font-size:14px;">
-						Phone: (650) 779-5628
-					</div>
+            
+            
+            
+            <div class="add_box">
+			<div class="add_box_content">
+				<div class="bt_box">
+					The customer evaluation
 				</div>
+				<div class="box_slider_zongti">
+					<a class="box_left" href="javascript:preve();">
+					</a>
+					<div class="box_slider" style="height:100px;">
+						<span class="box_font" id="box_1" >
+							<div class="touxiang"><img src="images/skt_logo.jpg"></div>
+                            <div class="yuyan_content">
+                            	<span style=" display:block; border-bottom:1px dashed #e4e4e4;">"The SKT Lab team has proven to be very reliable and a cut above the rest when it comes to intellectual capital, responsiveness and professionalism. I am truly impressed. "</span>
+                                <span class="clean"></span>
+                                <span><b style="color:#0132ad; line-height:40px; ">Joon Lee, Vice-President, SK Telecom Ventures</b></span>
+                            </div>
+						</span>
+                        
+                        
+                        
+                        
+                        
+						<span class="box_font" id="box_2" >
+							<div class="touxiang"><img src="images/skt_logo02.jpg"></div>
+                            <div class="yuyan_content">
+                            	<span style=" display:block; border-bottom:1px dashed #e4e4e4;">"SKT Lab helped us build our marketing automation product currently being used by tens of thousands of our employees and contractors. It is running smoothly and really helped differentiate us from our competitors...</span>
+                                <span class="clean"></span>
+                                <span><b style="color:#0132ad; line-height:40px; ">Founder and CEO, Varga Inc.</b></span>
+                            </div>
+						</span>
+                        
+						<span class="box_font" id="box_3" >
+							<div class="touxiang"><img src="images/skt_logo03.jpg"></div>
+                            <div class="yuyan_content">
+                            	<span style=" display:block; border-bottom:1px dashed #e4e4e4;">"I am so impressed by the quality of engineers you assigned to work on our product.  I am wondering what kind of magic you have done to find such a talented team. Thank you for all your hard work ! "</span>
+                                <span class="clean"></span>
+                                <span><b style="color:#0132ad; line-height:40px; ">Chien Chou, VP Engineering, Loyal3</b></span>
+                            </div>
+						</span>
+                        
+						<span class="box_font" id="box_4" >
+							<div class="touxiang"><img src="images/skt_logo04.jpg"></div>
+                            <div class="yuyan_content">
+                            	<span style=" display:block; border-bottom:1px dashed #e4e4e4;">" I am have a high level of confidence in SKT Lab and their team. They have been working on a number of projects for me, each of which has been delivered on time, on budget and with quality exceeding..."</span>
+                                <span class="clean"></span>
+                                <span><b style="color:#0132ad; line-height:40px; ">Scott Gardner, Director of Engineering, Blue Kai</b></span>
+                            </div>
+						</span>
+                        
+                        <span class="box_font" id="box_5">
+							<div class="touxiang"><img src="images/skt_logo05.jpg"></div>
+                            <div class="yuyan_content">
+                            	<span style=" display:block; border-bottom:1px dashed #e4e4e4;">" Your team has been knowledgeable, professional, and have provided a high level of customer service. You' ve done far more than just software development. Your developers provide solutions. We continue to be impressed by our experience with your team and look forward to growing our relationship."</span>
+                                <span class="clean"></span>
+                                <!--<span><b style="color:#0132ad; line-height:40px; "></b></span>-->
+                            </div>
+						</span>
+                        
+					</div>
+					<a class="box_right" href="javascript:next();">
+					</a>
+				</div>
+			</div>
+		</div>
+        
+        
+        
+        
+        
+        
+			<div class="content_new" >
 				<div style="margin-left:10px; line-height:28px; font-size:16px; color:#3d3d3d; position:relative;">
 					<div style="position:absolute; left:740px; top:52px; width:210px; height:112px; z-index:-5;">
                     	<img src="images/shangbiao_02.jpg">
@@ -114,7 +177,7 @@
 					<h2 style="color:#3d3d3d;">
 						Why SKT Lab? 
                     </h2>
-					<p style="font-size:18px; margin-bottom:40px; width:740px;">
+					<p style="font-size:16px; margin-bottom:40px; width:730px;">
 						Our people are some of the best and most creative engineers in the world.
 						Whether your project needs a single engineer working on a single platform,
 						or a team of engineers working across several disparate platforms onsite
@@ -265,53 +328,6 @@
 						to project. No matter what your preference, at SKT Lab we are flexible
 						and can adapt to the engagement model of your choice.
 					</p>
-				</div>
-			</div>
-		</div>
-		<div class="add_box">
-			<div class="add_box_content">
-				<div class="bt_box">
-					The customer evaluation
-				</div>
-				<div class="box_slider_zongti">
-					<a class="box_left" href="javascript:preve();">
-					</a>
-					<div class="box_slider" style="height:100px;">
-						<span class="box_font" id="box_1" style="position:relative">
-							" I am so impressed by the quality of engineers you assigned to work on
-							our product. I am wondering what kind of magic you have done to find such
-							a talented team. Thank you for all your hard work ! "
-							<br>
-							<b style="color:#0132ad;">
-								Chien - VP Engineering, Loyal3
-							</b>
-						</span>
-						<span class="box_font" id="box_2" style="display:none;">
-							" For now, please use some sample quotes. Do not update the live website
-							- please show us this before making it go live. We will provide you the
-							actual quotes in another day or so "
-							<br>
-							<b style="color:#0132ad;">
-								Chien
-							</b>
-						</span>
-						<span class="box_font" id="box_3" style="display:none;">
-							" dsaffadgdfgdfgadfgsdfgsdfgr so "
-							<br>
-							<b style="color:#0132ad;">
-								Chien
-							</b>
-						</span>
-						<span class="box_font" id="box_4" style="display:none;">
-							" 111111111111ual quotes in another day or so "
-							<br>
-							<b style="color:#0132ad;">
-								Chien
-							</b>
-						</span>
-					</div>
-					<a class="box_right" href="javascript:next();">
-					</a>
 				</div>
 			</div>
 		</div>
