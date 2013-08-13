@@ -218,8 +218,8 @@ img{
 	
 #menus{
             overflow: hidden;
-			font-size:16px;
-			margin:36px 0px 0px 270px;
+			font-size:17px;
+			margin:36px 0px 0px 250px;
 			font-family:Arial, Helvetica-Regular, sans-serif;
         }
 
@@ -243,7 +243,6 @@ img{
 	        }
 		.no_boder{
 			text-transform:uppercase;
-			
 			height:24px;
 			line-height:24px;
             float: left;
@@ -252,7 +251,6 @@ img{
 			
 			}
 			.no_boder:hover{
-			
 			height:24px;
 			line-height:24px;
 			color:#ffa200;
@@ -274,6 +272,13 @@ img{
 			filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
 			
         }
+		  #menus > li > ul > li{
+			display:block;
+			font-size:15px;
+			text-decoration:none;
+			line-height:34px;
+			
+        }
 .dingwei_a{
 	width:180px;
 	margin: 0px 0px 0px -54px;
@@ -286,15 +291,6 @@ img{
 	width:120px;
 	margin: 0px 0px 0px -24px;
 	}
-	
-	
-        #menus > li > ul > li{
-			display:block;
-			font-size:15px;
-			text-decoration:none;
-			line-height:34px;
-			
-        }
 		.yanse{
 			color:#0132ad;
 			line-height:24px;
@@ -309,9 +305,9 @@ img{
 .requst{
 	color:#fff;
 	float:left;
-	margin-left:52px;
+	margin-left:72px;
 	padding:3px;
-	font-size:16px;
+	font-size:14px;
 	font-family:Arial, Helvetica-Regular, sans-serif;
 	background:rgba(0,50,173,.8);
 	border-radius:4px;
@@ -428,7 +424,6 @@ img{
 	margin:0 auto;
 	zoom:1;
 	overflow:hidden;
-	padding-top:20px;
 	}
 .box_slider_zongti a{
 	display:block;
