@@ -458,13 +458,13 @@ img{
 .box_slider{
 	float:left;
 	font-family:Arial, Helvetica-light, sans-serif;
-	width:880px;
+	width:930px;
 	zoom:1;
 	line-height:28px;
 	font-size:16px;
 	border-radius:10px;
 	background:#fafafa;
-	padding:15px;
+	padding:0px 15px 15px 15px;
 	}
 
 .bt_box{
@@ -473,11 +473,16 @@ img{
 	font-weight: bold;
 	}
 .box_font{
-	display:none;
-	}
-#box_1{
+	margin-top:10px;
 	display:block;
+	overflow:auto;
+	zoom:1;
+	
+	padding-bottom:10px;
 	}
+/*#box_1{
+	display:block;
+	}*/
 .touxiang{
 	float:left;
 	border:1px solid #e1e9f2;
@@ -492,7 +497,7 @@ img{
 	height:88px;
 	}
 .yuyan_content{
-	width:770px;
+	width:820px;
 	float:left;
 	}
 .clean{
