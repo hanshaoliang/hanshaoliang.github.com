@@ -178,7 +178,7 @@ img{
 	.content_new{
 		font-family:Arial, Helvetica-light, sans-serif;
 		font-size:16px;
-		overflow:auto;
+		overflow:hidden;
 		}
 	.content_new ul{
 		list-style:none;
@@ -459,7 +459,7 @@ img{
 	font-size:14px;
 	border-radius:10px;
 	background:#fafafa;
-	padding:0px 15px 15px 15px;
+	padding:0px 15px 0px 15px;
 	}
 
 .bt_box{
