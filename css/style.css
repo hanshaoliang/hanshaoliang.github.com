@@ -65,10 +65,10 @@ img{
 	}
 .top_content{
 	width:960px;
-	height:92px;
 	margin:0 auto;
 	zoom:1;
-	overflow:hidden;
+	overflow:auto;
+	zoom:1;
 	}
 .top_logo{
 	float:left;
