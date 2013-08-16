@@ -224,7 +224,7 @@ img{
         }
 
         #menus > li{
-			text-transform:uppercase;
+			/*text-transform:uppercase;*/
 			/*width:102px;*/
 			height:24px;
 			line-height:24px;
@@ -233,6 +233,9 @@ img{
 			text-align:center;
 			cursor:pointer;
 	        }
+			 #menus > span{
+				  float: left;
+				 }
 		#menus > li:hover{
 			/*width:102px;*/
 			height:24px;
