@@ -314,7 +314,7 @@ img{
 	padding:3px;
 	font-size:14px;
 	font-family:Arial, Helvetica-Regular, sans-serif;
-	background:rgba(0,50,173,.8);
+	background:#3057bf;
 	border-radius:4px;
 	cursor:pointer;
 	transition:all .5s ease-in;
@@ -324,7 +324,7 @@ img{
 	}
 .requst:hover{
 	color:#fff;
-	background:rgba(245,156,0,1);
+	background:#f69c00;
 	border-radius:4px;
 	}
 .readmore{
