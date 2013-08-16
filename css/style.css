@@ -220,8 +220,8 @@ img{
 	}
 #menus{
             overflow: hidden;
-			font-size:17px;
-			margin:36px 0px 0px 250px;
+			font-size:18px;
+			margin:36px 0px 0px 350px;
 			font-family:Arial, Helvetica-Regular, sans-serif;
         }
 
@@ -263,7 +263,7 @@ img{
 			cursor:pointer;
 				}
 .m_r{
-	margin-right: 40px;
+	margin-right: 50px;
 	}
         
 
@@ -372,39 +372,35 @@ img{
 .float_middle{
 	position:fixed;
 	overflow:auto;
+	background:#fff;
+	filter:Alpha(opacity=80);
 	background:rgba(255,255,255,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);
 	padding:5px 0px 5px 10px;
 	border-radius:5px;
 	border:1px solid #AAA;
 	right:1%;
 	top: 70%;
+	z-index:999999999;
 	}
 .float_middle span{
 	display:block;
 	width:150px;
-	height:22px;
-	padding-top:4px;
+	height:30px;
+	background:url(../images/button_request.jpg) no-repeat center;
+	
 	float:left;
-	margin-top:10px;
 	margin-right:10px;
-	background: #0032ad;
-	color:#EEE;
-	border-radius:4px;
-	font-size:14px;
-	text-align:center;
+
 	/*text-shadow:0px 1px 1px rgba(255,255,255,1);*/
 	cursor:pointer;
-	font-family:Arial, Helvetica, sans-serif;
+	
 	}
 	.float_middle span:hover{
-	border-radius:4px;
-	background: #f59c00;
-	-webkit-transition: background .5s linear;
-	-moz-transition: background .5s linear;
-	-ms-transition: background .5s linear;
-	-o-transition: background .5s linear;
-	transition: background .5s linear;
+		background:url(../images/button_request_hover.jpg) no-repeat;
 		}
+		
+		
 .careers_link{
 	text-decoration:none;
 	color:#0132ad;
@@ -505,7 +501,17 @@ img{
 	margin:0;
 	padding:0;
 	}
-	
+.risk_free_btn{
+	display:block;
+	margin-top:75px;
+	margin-left:8px; 
+	width:185px; 
+	height:28px;
+	background:url(../images/shangbiao_btn.jpg) no-repeat;
+	}
+	.risk_free_btn:hover{
+		background:url(../images/shangbiao_btn_hover.jpg) no-repeat;
+		}
 	
 	
 	
