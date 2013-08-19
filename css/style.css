@@ -273,9 +273,13 @@ img{
             padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
-			background:#fff;
-			filter:Alpha(opacity=80);
 			background:rgba(255,255,255,.8);
+	-webkit-background:rgba(255,255,255,.8);
+	-moz-background:rgba(255,255,255,.8);
+	-o-background:rgba(255,255,255,.8);
+	
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
+			
 			
         }
 		  #menus > li > ul > li{
@@ -365,8 +369,10 @@ img{
 	padding: 0;
 	list-style: none;
 	background:rgba(255,255,255,.8);
-	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
-	border-radius: 0px 0px 0px 0px;
+	-webkit-background:rgba(255,255,255,.8);
+	-moz-background:rgba(255,255,255,.8);
+	-o-background:rgba(255,255,255,.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);/*#7F000000的前两位为16进制透明度，后六位为16进制颜色*/
 	display: none;
 }
 
