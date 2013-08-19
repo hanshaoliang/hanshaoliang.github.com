@@ -273,6 +273,8 @@ img{
             padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
+			background:#fff;
+			filter:Alpha(opacity=80);
 			background:rgba(255,255,255,.8);
 			
         }
