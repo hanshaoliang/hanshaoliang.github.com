@@ -273,7 +273,7 @@ img{
             padding:10px 0px 0px 5px;
             z-index: 1000;
             display: none;
-			background:rgba(255,255,255,.8);
+			background:#fff;
 			
         }
 		  #menus > li > ul > li{
