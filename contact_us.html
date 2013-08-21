@@ -42,7 +42,7 @@
                     event.preventDefault();
 					return;
 				}
-				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+$('#form-message').val()+'"}';
+				 var emaildata = '{"name":"'+$('#form-name').val()+'","companyName":"'+$('#company-name').val()+'","phone":"'+$('#form-phone').val()+'","email":"'+$('#form-email').val()+'","message":"'+escape($('#form-message').val())+'"}';
 				$.ajax(
 				{
 					url:"http://jiezu1.cloudapp.net:7000/email",
