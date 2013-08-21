@@ -41,10 +41,10 @@
 				 }
 				//phone
 				var phone_value = $("#form-phone").val();
-				var phone_regular = /(^[0-9]{3,4}\-[0-9]{3,8}$)|(^[0-9]{3,8}$)|(^\([0-9]{3,4}\)[0-9]{3,8}$)|(^0{0,1}13[0-9]{9}$)/;
+			var phone_regular = /^[\\"]+$/;
 				if(phone_value){
 					$('#form-phone-error').html('');
-					if(!phone_regular.test(phone_value)){
+					if(phone_regular.test(phone_value)){
 					 $("#form-phone-error").html("Phone is invalidate!");
 					 hasError = true;
 					}
