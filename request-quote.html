@@ -41,7 +41,7 @@
 				 }
 				//phone
 				var phone_value = $("#form-phone").val();
-				var phone_regular = /^(([0\+]\d{2,3}-)?(0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
+				var phone_regular = /(^[0-9]{3,4}\-[0-9]{3,8}$)|(^[0-9]{3,8}$)|(^\([0-9]{3,4}\)[0-9]{3,8}$)|(^0{0,1}13[0-9]{9}$)/;
 				if(phone_value){
 					$('#form-phone-error').html('');
 					if(!phone_regular.test(phone_value)){
