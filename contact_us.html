@@ -23,8 +23,42 @@
             $('#submit').click(function(event){
                 var hasError = false;
                 //validation
-                if( $('#form-email').val()){
-                    $('#form-email-error').html('')
+				 var common_regular = /^[\w\d\u4E00-\u9FA5]+$/;
+				 var name_value = $("#form-name").val();
+				 $("#form-name-error").html("");
+				 if(name_value){
+					if(!common_regular.test(name_value)){
+					$("#form-name-error").html("Name is invalidate!");
+					 hasError = true;
+					}
+				 }
+				 var companyName = $("#company-name").val();
+				 $("#form-company-error").html("");
+				 if(companyName){
+					if(!common_regular.test(companyName)){
+					$("#form-company-error").html("Company is invalidate!");
+					 hasError = true;
+					}
+				 }
+				//phone
+				var phone_value = $("#form-phone").val();
+				var phone_regular = /^(([0\+]\d{2,3}-)?(0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
+				if(phone_value){
+					$('#form-phone-error').html('');
+					if(!phone_regular.test(phone_value)){
+					 $("#form-phone-error").html("Phone is invalidate!");
+					 hasError = true;
+					}
+				}
+				//email
+				var email_regular = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+				var email_value = $('#form-email').val();
+                if( email_value){
+                    $('#form-email-error').html('');
+					if(!email_regular.test(email_value)){
+					$('#form-email-error').html('Email is invalidate!');
+						hasError = true;
+					}
                 }
                 else{
                     $('#form-email-error').html('Email is required')
@@ -46,7 +80,7 @@
 				$.ajax(
 				{
 					url:"http://jiezu1.cloudapp.net:7000/email",
-					data:eval("("+emaildata+")"),
+					data:JSON.parse(emaildata),
 					dataType:"json",
 					type:"POST",
 					timeout:5000,
@@ -138,13 +172,15 @@
                                 <div class="content_bt_bb"><img src="images/leave_message.jpg"></div>
                                 <div class="TectiteFormDesignerField">
                                     <input type="text" id="form-name" name="FullName" placeholder="name (optional)"/>
-                                    <span id="form-name-error"></span>
+                                    <span id="form-name-error" class="text-error"></span>
                                 </div>
                                 <div class="TectiteFormDesignerField">
                                     <input type="text"  id="company-name" name="name" rows="6" cols="40" placeholder="company name (optional)"></input>
+									<span id="form-company-error" class="text-error"></span>
                                 </div>
                                 <div class="TectiteFormDesignerField">
                                     <input type="text"  id="form-phone" name="phone" rows="6" cols="40" placeholder="phone (optional)"></input>
+									<span id="form-phone-error" class="text-error"></span>
                                 </div>
                                 <div class="TectiteFormDesignerField">
                                     <input type="text" id="form-email" name="EmailAddr" placeholder="email (required)"/>
