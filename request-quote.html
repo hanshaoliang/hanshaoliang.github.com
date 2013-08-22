@@ -22,7 +22,7 @@
             $('#submit').click(function(event){
                 var hasError = false;
                 //validation
-				 var common_regular =  /^[\\"]+$/;
+				 var common_regular =  /[\\\"]+/;
 				 var name_value = $("#form-name").val();
 				 $("#form-name-error").html("");
 				 if(name_value){
@@ -41,7 +41,7 @@
 				 }
 				//phone
 				var phone_value = $("#form-phone").val();
-				var phone_regular = /^[\\"]+$/;
+				var phone_regular = /[\\\"]+/;
 				if(phone_value){
 					$('#form-phone-error').html('');
 					if(phone_regular.test(phone_value)){
