@@ -23,11 +23,11 @@
             $('#submit').click(function(event){
                 var hasError = false;
                 //validation
-				 var common_regular = /^[\w\d\u4E00-\u9FA5]+$/;
+				 var common_regular = /^[\\"]+$/;
 				 var name_value = $("#form-name").val();
 				 $("#form-name-error").html("");
 				 if(name_value){
-					if(!common_regular.test(name_value)){
+					if(common_regular.test(name_value)){
 					$("#form-name-error").html("Name is invalidate!");
 					 hasError = true;
 					}
@@ -35,7 +35,7 @@
 				 var companyName = $("#company-name").val();
 				 $("#form-company-error").html("");
 				 if(companyName){
-					if(!common_regular.test(companyName)){
+					if(common_regular.test(companyName)){
 					$("#form-company-error").html("Company is invalidate!");
 					 hasError = true;
 					}
