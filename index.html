@@ -1,179 +1,48 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" manifest="cache.manifest">
+<!--<![endif]-->
 <head>
-<meta name="keywords" content="software development companies, software development company,Custom Software,custom software design,custom software solutions,custom software engineering,custom software developers,custom software developer,custom software,custom software development,custom software development company,custom software services,custom software companies,custom software solution,custom software experts,custom software development firm,custom software development companies,custom software company,custom software development solutions,customized software,Custom Software Development,custom made software,customized software development,customized software solutions,customize software,custom software products,custom designed software,Customized Software,software custom development,software developer company,customized software solution,custom business software development,custom development software,software development custom,software developing companies,company software development,software product development company,customizing software,software developer companies,software developing company,Custom Software Design,software development companies in usa,customized softwares,custom software business,customized software development companies,customize software development,Create your own software,Offshore Custom Development China,Create Custom Software,Offshore Custom Development" />
-<meta name="description" content="we build world class software products, html,css">
-<link rel="Shortcut Icon" href="images/favicon.ico"  type="image/x-icon"/>
-<link href="css/style.css"  rel="stylesheet" type="text/css" />
-<link href="css/camera.css" rel="stylesheet" type="text/css"/>
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.slides.min.js"></script>
-<script src="js/camera.min.js"></script>
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <!-- 根据屏幕自适应 -->
+<meta name="format-detection" content="telephone=no" /><!--如果你不希望手机自动将网页中的电话号码显示为拨号的超链接，那么可以这样写：-->
+<!-- <link rel="shortcut icon" href="/images/favicon.ico" />html 添加图标
+<link rel="icon" href="/images/favicon.ico" /> -->
+<!-- iOS Web App -->
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- 隐藏safari 状态栏 -->
+<meta name="apple-mobile-web-app-title" content="微博思" /> <!-- app title -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><!-- 设置状态栏为黑色 -->
+<!--IOS320-->
+<link rel="apple-touch-icon-precomposed"  sizes="57x57" href="images/ios/icon57x57.png" /><!-- 设置主屏幕(Spring Board)启动图标 --不想系统自动生成图标“precomposed”-->
 
-  ga('create', 'UA-42863101-1', 'sktlab.com');
-  ga('send', 'pageview');
+<link href="images/bg_320x460.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image"><!-- 手机加载页面设置 -->
 
-</script>
-<script type="text/javascript" src="js/main.js"></script>
-<title>SKT Lab</title>
-<style type="text/css">
-        .splash_content{
-            height: 420px;
-            background-color: #fff;
-            position: relative;
-        }
+<!--IOS Retina-->
+<link rel="apple-touch-icon-precomposed"  sizes="114x114" href="images/ios/icon114x114.png" /><!-- 设置主屏幕(Spring Board)启动图标 --不想系统自动生成图标“precomposed”-->
 
-        .camera_pag{
-            position: relative;
-        }
+<link href="images/bg_640x920.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone 5 -->
+<!-- <link href="http://taylor.fausak.me/static/images/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"> -->
+<!-- Bootstrap  -->
+<link href="http://dw-resources.qiniudn.com/bootstrap/global.min.css" rel="stylesheet" media="screen" />
+<link href="http://dw-resources.qiniudn.com/bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
 
-        .camera_pag_ul{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-
-        .camera_commands{
-            display: none;
-        }
-        .camera_wrap .camera_pag .camera_pag_ul li{
-            height: 12px;
-            width: 12px;
-        }
-
-        .camera_wrap .camera_pag .camera_pag_ul li > span{
-            height: 4px;
-            width: 4px
-        }
-		.content_left{
-			float:left;
-			width:333px;
-			height:201px;
-			overflow:hidden;
-			}
-		.content_left_top{
-			margin-top:17px;
-			margin-bottom:18px;
-			}
-		.content_left_content{
-			width:241px;
-			font-size:18px;
-			line-height:23px;
-			font-family:Arial, Helvetica, sans-serif;
-			color:#666;
-			}
-		.content_middle{
-			float:left;
-			width:341px;
-			height:201px;
-			overflow:hidden;
-			}
-		.content_middle_top{
-			margin-top:18px;
-			margin-left:6px;
-			margin-bottom:22px;
-			}
-		.content_middle_content{
-			font-size:18px;
-			line-height:23px;
-			font-family:Arial, Helvetica, sans-serif;
-			color:#666;
-			padding-left:8px;
-			width:272px;
-			}
-		.content_right{
-			float:left;
-			width:286px;
-			height:201px;
-			overflow:hidden;
-			}
-		.content_right_top{
-			margin-top:16px;
-			margin-bottom:21px;
-			margin-left:7px;
-			}
-		.content_right_content{
-			font-size:18px;
-			line-height:23px;
-			font-family:Arial, Helvetica, sans-serif;
-			color:#666;
-			padding-left:8px;
-			}
-</style>
+<script type="text/javascript" src="http://dw-resources.qiniudn.com/js/jquery-1.9.1.min.js"></script>
+<title>新技术尝试</title>
 </head>
 <body>
-<div class="top">
-	<div id="headerPlaceHolder" class="top_content"></div>
-    </div>
-</div>
-<div class="splash">
-	<div class="splash_content">
-        <div data-src="images/lunxun_01.jpg"></div>
-        <div data-src="images/lunxun_02.jpg"></div>
-        <div data-src="images/lunxun_03.jpg"></div>
-        <div data-src="images/lunxun_04.jpg"></div>
-        <div data-src="images/lunxun_05.jpg"></div>
-        <div data-src="images/lunxun_06.jpg"></div>
-        <div data-src="images/lunxun_07.jpg"></div>
-        <div data-src="images/lunxun_08.jpg"></div>
-    </div>
-</div>
-<div style="clear:both; padding:0; margin:0;"></div>
-<div class="splash_shadow"><img src="images/03.jpg"></div>
-<div class="content">
-	<div class="content_left">
-    	<div class="content_left_top"><a href="services_product.html"><img src="images/content_left_top_img.jpg"></a></div>
-        <div class="content_left_content">We are passionate about<br> co-developing and commercializing great ideas. Experienced working with startups and their inspired vision as well as multinational</div>
-    </div>
-    <div class="content_middle">
-    	<div class="content_middle_top"><a href="services_overview.html"><img src="images/content_left_middle_img.jpg"></a></div>
-        <div class="content_middle_content">Our people are some of the best and most creative engineers in the world. Whether your project needs a single engineer working on a single platform, or a team of engineers working across</div>
-    </div>
-    <div class="content_right">
-    	<div class="content_right_top"><a href="services_china.html"><img src="images/content_right_img.jpg"></a></div>
-        <div class="content_right_content">China is where it's at. More and more US based software companies are recognizing that in order to compete, serving the China market is critical. To do this effectively, local partners are</div>
-    </div>
-</div>
-<div class="readmore">
-	<span class="sty_redmore" onClick="window.open('services_product.html','_self');"></span>
-    <span class="sty_redmore" style="margin-left:248px;" onClick="window.open('services_overview.html','_self');"></span>
-    <span class="sty_redmore" style="margin-left:245px;"  onclick="window.open('services_china.html','_self');"></span>
-</div>
-<div class="top_line">
-	<div class="top_line_content">
-    	<div style="overflow:hidden; width:280px; margin:0 auto;">
-    	<a href="http://www.linkedin.com/company/3201231?trk=tyah" class="twitter"></a>
-        <a class="face"></a>
-        <a href="http://www.linkedin.com/company/3201231?trk=tyah" class="linkedin"></a>
-        <a class="blogger"></a>
-        <a class="plus"></a>
-        <a class="pinterest"></a>
-        <a class="rss"></a>
-        <a class="custom"></a>
-       </div> 
-    </div>
-</div>
-<div class="copright"></div>
-<script type="text/javascript" src="js/jquery.slides.min.js"></script>
-<script type="text/javascript">
-
-    jQuery('.splash_content').camera({
-        mobileAutoAdvance: false,
-        easing: 'swing',
-        fx: 'simpleFade',
-        height: '420px',
-        navigation: false,
-        navigationHover: false,
-        hover:false,
-		time: 5000
-
-    });
-</script>
+11
 </body>
 </html>
