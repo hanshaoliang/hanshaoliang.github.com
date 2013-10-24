@@ -1,48 +1,111 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]>
-<html id="ie8" lang="zh-CN">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="zh-CN" manifest="cache.manifest">
-<!--<![endif]-->
+<html lang="zh-CN" >
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <!-- 根据屏幕自适应 -->
-<meta name="format-detection" content="telephone=no" /><!--如果你不希望手机自动将网页中的电话号码显示为拨号的超链接，那么可以这样写：-->
-<!-- <link rel="shortcut icon" href="/images/favicon.ico" />html 添加图标
-<link rel="icon" href="/images/favicon.ico" /> -->
-<!-- iOS Web App -->
-<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- 隐藏safari 状态栏 -->
-<meta name="apple-mobile-web-app-title" content="微博思" /> <!-- app title -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><!-- 设置状态栏为黑色 -->
-<!--IOS320-->
-<link rel="apple-touch-icon-precomposed"  sizes="57x57" href="images/ios/icon57x57.png" /><!-- 设置主屏幕(Spring Board)启动图标 --不想系统自动生成图标“precomposed”-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- <meta name="viewport" content="width=480; initial-scale=0.6666;  maximum-scale=1.0; minimum-scale=0.8" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0;  ">
+<!--手机icon-->
+<link rel="apple-touch-icon-precomposed" href="http://stephan-siegrist.ch/images/core/apple-touch-icon.png">
+<!-- css --> 
+<!--[if gte IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie8.css"  type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie7.css" type="text/css" media="screen"  /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" />
 
-<link href="images/bg_320x460.png"
-      media="(device-width: 320px) and (device-height: 480px)
-         and (-webkit-device-pixel-ratio: 1)"
-      rel="apple-touch-startup-image"><!-- 手机加载页面设置 -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 
-<!--IOS Retina-->
-<link rel="apple-touch-icon-precomposed"  sizes="114x114" href="images/ios/icon114x114.png" /><!-- 设置主屏幕(Spring Board)启动图标 --不想系统自动生成图标“precomposed”-->
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/bgstretcher.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+        //  Initialize Backgound Stretcher	   
+		$('.demoo').bgStretcher({
+			images: ['images/ubertal_bg_01.jpg', 'images/ubertal_bg_02.jpg', 'images/ubertal_bg_03.jpg','images/ubertal_bg_04.jpg','images/ubertal_bg_05.jpg','images/ubertal_bg_06.jpg', 'images/ubertal_bg_07.jpg', 'images/ubertal_bg_08.jpg', 'images/ubertal_bg_09.jpg',],
+			imageWidth: 2000, 
+			imageHeight: 1101, 
+			slideDirection: 'N',
+			slideShowSpeed: 2000,
+			nextSlideDelay: 8000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			resizeProportionally: true
+		});
+		
+	});
 
-<link href="images/bg_640x920.png"
-      media="(device-width: 320px) and (device-height: 480px)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image">
-<!-- iPhone 5 -->
-<!-- <link href="http://taylor.fausak.me/static/images/apple-touch-startup-image-640x1096.png"
-      media="(device-width: 320px) and (device-height: 568px)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image"> -->
-<!-- Bootstrap  -->
-<link href="http://dw-resources.qiniudn.com/bootstrap/global.min.css" rel="stylesheet" media="screen" />
-<link href="http://dw-resources.qiniudn.com/bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
+</script>
 
-<script type="text/javascript" src="http://dw-resources.qiniudn.com/js/jquery-1.9.1.min.js"></script>
-<title>新技术尝试</title>
+<style type="text/css">
+	body{
+		padding-top: 39px;
+	}
+</style>
+<title>官方首页</title>
 </head>
-<body>
-11
+<body class="demoo">
+<div class="container">
+	<div class="header">
+		<div class="row">
+			<div class="col-md-4"><img src="images/logo.png"></div>
+			<div class="col-md-8"> <span class="logo_font">super smart engineering talent</span></div>
+		</div>
+		<div class="">
+			<ul class="list-inline">
+				<li>Asss</li>
+				<li>Bssss</li>
+			 </ul>
+		</div>
+		<div class="">
+			<div class="pull-left">
+				Call US 7777
+			</div>
+			<div class="pull-right">
+				Developers | Clients
+			</div>
+		 </div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="content">
+		<div class="">
+			<div class="col-md-6">Why</div>
+			<div class="col-md-6">Developer</div>
+		</div>
+	</div>
+
+	<div class="footer"></div>
+</div>
+
+<!-- <div class="body_zong">
+	<div class="head">
+		<div class="head_top">
+			<span><img src="images/logo.png"></span>
+			<span class="logo_font">super smart engineering talent</span>
+		</div>
+		<div>1</div>
+	</div>
+</div> -->
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
