@@ -11,13 +11,15 @@
 <!--[if gte IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie8.css"  type="text/css" media="screen" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie7.css" type="text/css" media="screen"  /><![endif]-->
 <!--[if IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" />
 
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" /><!-- 调用背景切换插件css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
-<script type="text/javascript" src="js/bgstretcher.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!-- 调用背景切换插件js -->
+<script type="text/javascript" src="js/jquery-bgstretcher-3.0.1.min.js"></script><!-- 调用背景切换插件js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 	
@@ -42,6 +44,13 @@
 	body{
 		padding-top: 39px;
 	}
+	.home_bg{
+		background: url(images/home_bg.png);
+		overflow: auto;
+		zoom:1;
+		padding-bottom: 30px;
+
+	}
 </style>
 <title>官方首页</title>
 </head>
@@ -52,41 +61,106 @@
 			<div class="col-md-4"><img src="images/logo.png"></div>
 			<div class="col-md-8"> <span class="logo_font">super smart engineering talent</span></div>
 		</div>
-		<div class="">
-			<ul class="list-inline">
-				<li>Asss</li>
-				<li>Bssss</li>
-			 </ul>
-		</div>
-		<div class="">
-			<div class="pull-left">
-				Call US 7777
-			</div>
-			<div class="pull-right">
-				Developers | Clients
-			</div>
-		 </div>
-	</div>
-	<div class="clearfix"></div>
-	<div class="content">
-		<div class="">
-			<div class="col-md-6">Why</div>
-			<div class="col-md-6">Developer</div>
-		</div>
-	</div>
+		<div class="uber-nav">
+			<a href="" class="dhua">home</a><a href="" class="mm-left">what we do</a><a href="" class="mm-left">why ubertal</a><a href="" class="mm-left">the process</a><a href="" class="mm-left">our team</a><a href="" class="mm-left">faq</a> <a href="" class="mm-left">contact us</a> 
 
-	<div class="footer"></div>
+		</div>
+	</div>
 </div>
-
-<!-- <div class="body_zong">
-	<div class="head">
-		<div class="head_top">
-			<span><img src="images/logo.png"></span>
-			<span class="logo_font">super smart engineering talent</span>
+	<div style="background:rgba(0,0,0,.5); height:40px; line-height:40px; color:#fff;">
+		<div class="container">	
+			<div class="">
+				<div class="pull-left">
+				Call US 7777
+				</div>
+				<div class="pull-right uber_right_magin">
+				Developers | Clients
+				</div>
+		 	</div>
 		</div>
-		<div>1</div>
 	</div>
-</div> -->
+	
+	<div class="container">
+		<div class="home-middle" >
+			<div class="col-md-6">
+				<div  style="padding-left:60px;">
+				<h1>Why Ubertal for Clients</h1>
+				<ul class="list-unstyled">
+					<li>High end talent</li>
+					<li>No risk</li>
+					<li>No penalty</li>
+				</ul>
+				</div>
+				<div class="uber-btn">
+					<span class="change-colo dhua">join as client</span>
+					<span class="uber-join"><img src="images/home-middle-arrow.png"></span>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<div style="padding-left:30px;">
+				<h1>Why Ubertal for Developers</h1>
+				<ul class="list-unstyled">
+					<li>Work with hot startup companies</li>
+					<li>Paid on time</li>
+					<li>Steady work</li>
+				</ul>
+				</div>
+				<div class="uber-btn">
+					<span class="change-colo dhua">join as client</span>
+					<span class="uber-join"><img src="images/home-middle-arrow.png"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="home_bg">
+			<div class="top">
+				<div class="pointer"><img src="images/360.png"></div>
+				<div class="pointer"><img src="images/art.png"></div>
+				<div class="pointer"><img src="images/aiv.png"></div>
+				<div class="pointer"><img src="images/axel.png"></div>
+				<div class="pointer"><img src="images/pfrzer.png"></div>
+			</div>
+			<div class="font_content">
+				<div class="col-md-3">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-stacked">
+						  <li><a href="#home" data-toggle="tab">Home</a></li>
+						  <li><a href="#profile" data-toggle="tab">what we do</a></li>
+						  <li><a href="#messages" data-toggle="tab">why ubertal</a></li>
+						  <li><a href="#settings" data-toggle="tab">the process</a></li>
+						  <li><a href="#team" data-toggle="tab">our team</a></li>
+						  <li><a href="#faq" data-toggle="tab">FAQ</a></li>
+						  <li><a href="#contact" data-toggle="tab">contact us</a></li>
+						</ul>
+				</div>
+				<div class="col-md-9">
+						<!-- Tab panes -->
+						<div class="tab-content hangju">
+						  <div class="tab-pane active fade in" id="home"><b style="font-weight: normal; color: #df0009;">WHAT WE DO</b><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobo uis massa. Nunc vitae purus non augue scelerisque ultricies vitae . Praesent eget consequat libero. ectus id sem lobortis scelerisque. Praesent eget consequat libero.  Pellentesque quis nulla id orci malesuada porta posuere quis massa. rtis scelerisque. Praesent eget consequat libero.  Pellentesque quis nulla id orci malesuada porta posuere.</div>
+						  <div class="tab-pane fade" id="profile"><b style="font-weight: normal; color: #df0009;">WHAT WE DO</b><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobo uis massa. Nunc vitae purus non augue scelerisque ultricies vitae . Praesent eget consequat libero. ectus id sem lobortis scelerisque. Praesent eget consequat libero.  Pellentesque quis nulla id orci malesuada porta posuere quis massa. rtis scelerisque. Praesent eget consequat libero.  Pellentesque quis nulla id orci malesuada porta posuere.</div>
+						  <div class="tab-pane fade" id="messages">...</div>
+						  <div class="tab-pane fade" id="settings">...</div>
+						  <div class="tab-pane fade" id="team">...</div>
+						  <div class="tab-pane fade" id="faq">...</div>
+						  <div class="tab-pane fade" id="contact">...</div>
+						</div>
+				</div>
+					
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
 
 </body>
 
