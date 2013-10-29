@@ -1,15 +1,23 @@
 
 /*sevn 2013 修改*/
 
+@font-face
+{
+font-family: myFirstFont;
+src: url(../fonts/Gotham-Bold.otf),
+     url(../fonts/Gotham-Bold.svg),
+     url(../fonts/Gotham-Bold.ttf),
+     url(../fonts/Gotham-Bold.woff);
+}
 .logo_font{
-	font-size: 26px;
-	/*font-weight: 800;*/
+	font-family:myFirstFont;
+	font-size: 20px;
+	font-weight:normal;
 	/*font-family: 'GothamHTF Bold';*/
-	font-variant: small-caps;
 	color: #fff;
 	line-height: 100px;
-	letter-spacing: 4px;
-	margin-left: 52px;
+	letter-spacing: 3px;
+	margin-left: 22px;
 
 }
 @media (max-width: 1200px) {
