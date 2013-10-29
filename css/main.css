@@ -76,7 +76,7 @@ src: url(../fonts/Gotham-Bold.otf),
 		font-variant:small-caps;
 		display: block;
 		float: left;
-		font-size:22px;
+		font-size:16px;
 		color: #fff;
 		text-decoration: none;
 		height: 55px;
@@ -92,9 +92,8 @@ src: url(../fonts/Gotham-Bold.otf),
 	}
 	@media(max-width: 768px){
 	.uber-nav a{
-		font-variant:small-caps;
 		display: block;
-		font-size:22px;
+		font-size:14px;
 		color: #fff;
 		text-decoration: none;
 		height: 30px;
