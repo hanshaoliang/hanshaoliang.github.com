@@ -139,8 +139,8 @@ src: url(../fonts/Gotham-Bold.otf),
 
 }
 .home-middle ul li{
-	font-size: 22px;
-	letter-spacing: 2px;
+	font-size: 18px;
+	letter-spacing: 1px;
 	margin: 0 auto;
 	
 
@@ -149,7 +149,7 @@ src: url(../fonts/Gotham-Bold.otf),
 content: "→";
 font-size: 14px;
 
-margin-right: 20px;
+margin-right: 10px;
 
 line-height: 50px;
 }
@@ -266,6 +266,16 @@ line-height: 50px;
 	border-bottom: 1px dashed #848484;
 
 }
+
+.no-bg-innerPage{
+	background: url(../images/home_bg.png);
+	width: 80%;
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	color: #535353;
+
+}
+
 @media(min-width:768px){
 .form-control{
 	border-radius: 0;
