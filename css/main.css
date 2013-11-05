@@ -11,12 +11,12 @@ src: url(../fonts/Gotham-Bold.otf),
 }
 .logo_font{
 	font-family:myFirstFont;
-	font-size: 20px;
+	font-size: 21px;
 	font-weight:normal;
 	/*font-family: 'GothamHTF Bold';*/
 	color: #fff;
 	line-height: 100px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	margin-left: 22px;
 
 }
@@ -68,7 +68,7 @@ src: url(../fonts/Gotham-Bold.otf),
 	
 	@media(min-width: 768px){
 		.mm-left{
-		margin-left: 90px;
+		margin-left: 49px;
 
 
 	}
@@ -125,15 +125,34 @@ src: url(../fonts/Gotham-Bold.otf),
 
 }
 .home-middle{
+	margin-top: 20px;
 	color: #fff;
+	text-shadow:0px 0px 5px #2d2d2d ;
+	-webkit-text-shadow:0px 0px 5px #2d2d2d ;
+	-moz-text-shadow:0px 0px 5px #2d2d2d ;
+	-o-text-shadow:0px 0px 5px #2d2d2d ;
 }
 .home-middle .col-md-6{
-	border-left: 1px dashed #fff;
+	/*border-left: 1px dashed #fff;*/
+	/*background-color: rgba(0,0,0,.5);*/
 }
+@media(max-width: 768px){
+.home-middle .col-md-6:first-child{
+	border-bottom: 1px dashed #505050;
+	zoom:1;
+	overflow: auto;
+	
+}
+}
+@media(min-width: 768px){
 .home-middle .col-md-6:last-child{
-	border-right: 1px dashed #fff;
+	border-left: 1px dashed #505050;
+	padding-left: 30px;
 }
-.home-middle h1{
+}
+
+.home-middle h2{
+	font-size: 32px;
 	margin-top: 30px;
 	font-family:myFirstFont;
 
@@ -160,7 +179,7 @@ line-height: 50px;
 	padding: 5px 10px 5px 10px;
 	margin-bottom: 50px;
 	float: right;
-	margin-right: 40px;
+	/*margin-right: 40px;*/
 	background: #f5f5f5;
 	color: #000;
 	border-radius:20px;
@@ -173,6 +192,8 @@ line-height: 50px;
 	-o-box-shadow: 0px 1px 2px #0f0f0f;
 	line-height: 22px;
 	text-align: center;
+	text-shadow:none;
+	font-weight: 800;
 	font-variant: small-caps;
 	font-size: 1.5em;
 
@@ -253,20 +274,30 @@ line-height: 50px;
 
 .hangju{
 	line-height: 26px;
+	font-size: 16px;
 }
-
+@media(min-width: 768px){
 .sin_bg{
 	background:url(../images/sin_bg.png) repeat;
 	width: 80%;
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 }
+}
+@media(max-width: 768px){
+.sin_bg{
+	background:url(../images/sin_bg.png) repeat;
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+}
+}
 .sin_bg h1{
 	color: #fff;
 	border-bottom: 1px dashed #848484;
 
 }
-
+@media(min-width: 768px){
 .no-bg-innerPage{
 	background: url(../images/home_bg.png);
 	width: 80%;
@@ -275,7 +306,17 @@ line-height: 50px;
 	color: #535353;
 
 }
+}
+@media(max-width: 768px){
+.no-bg-innerPage{
+	background: url(../images/home_bg.png);
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	color: #535353;
 
+}
+}
 @media(min-width:768px){
 .form-control{
 	border-radius: 0;
