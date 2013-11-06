@@ -24,6 +24,7 @@ src: url(../fonts/Gotham-Bold.otf),
   .logo_font {
     margin-left: 0px;
     letter-spacing: 0px;
+    line-height: 50px;
     text-align: center;
   }
 }
@@ -104,7 +105,7 @@ src: url(../fonts/Gotham-Bold.otf),
 	}
 	@media(min-width: 768px) and (max-width: 1200px){
 		.mm-left{
-		margin-left: 20px;
+		margin-left: 10px;
 
 	}
 	}
