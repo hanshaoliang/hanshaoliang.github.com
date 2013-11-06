@@ -87,14 +87,20 @@ src: url(../fonts/Gotham-Bold.otf),
 	color: #df0009;
 
 }
+@media(min-width: 768px){
 	.mm-left{
 		margin-left: 49px;
 	}
-	
+	}
 	@media(min-width: 768px) and (max-width: 1200px){
 		.mm-left{
 		margin-left: 20px;
 	}
+		.navbar-inverse .navbar-nav > li > a{
+			padding: 0px 8px 0px 8px;
+			margin: 0;
+			line-height: 50px;
+		}
 
 	}
 	
