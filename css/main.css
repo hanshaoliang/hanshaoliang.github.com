@@ -29,17 +29,54 @@ src: url(../fonts/Gotham-Bold.otf),
   }
 }
 
-.container-colo{
-	background-color: #000;
-}
+/*.uber-nav{
+	background-color: #222222;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
 
-.uber-nav{
+}
+.uber-nav .container{
+	margin: 0 auto;
 	padding: 0;
+}
+.uber-nav .container ul{
+	padding: 0;
+	margin: 0;
+	padding-left: 15px;
+	display: block;
+	zoom:1;
+}
+.uber-nav .container ul li{
+	list-style: none;
+}
+
+.uber-nav .container li a{
+	color: #91999a;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+.uber-nav .container li a:hover{
+	color: #df0009;
+	
 
 }
-.uber-nav li{
-	text-align: left;
+
+.uber-nav > .container  li{
+	display: block;
+	float: left;
+	text-align: center;
 }
+.uber-nav > .container  li:first-child {
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: center;
+	margin-left: 0px;
+}*/
+
+
 
 
 .navbar-inverse .navbar-nav > .active > a{
@@ -50,100 +87,19 @@ src: url(../fonts/Gotham-Bold.otf),
 	color: #df0009;
 
 }
-
-
-
-
-
-
-
-
-
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #da0a12;
-  /*background-color: #e7e7e7;*/
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #da0a12;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #da0a12;
-  background-color: transparent;
-}
-	.uber-nav{
-		border-top: 1px dashed #505050;
-		margin-top: 15px;
-		overflow: auto;
-		zoom:1;
+	.mm-left{
+		margin-left: 49px;
+	}
+	
+	@media(min-width: 768px) and (max-width: 1200px){
+		.mm-left{
+		margin-left: 20px;
+	}
 
 	}
 	
-	@media(min-width: 768px){
-		.mm-left{
-		margin-left: 49px;
+	
 
-
-	}
-		.uber-nav a{
-		display: block;
-		float: left;
-		font-size:16px;
-		color: #fff;
-		text-decoration: none;
-		height: 55px;
-		line-height: 55px;
-
-	}
-	}
-	@media(min-width: 768px) and (max-width: 1200px){
-		.mm-left{
-		margin-left: 10px;
-
-	}
-	}
-	@media(max-width: 768px){
-	.uber-nav a{
-		display: block;
-		font-size:14px;
-		color: #fff;
-		text-decoration: none;
-		height: 30px;
-		line-height: 30px;
-
-	}	
-	}
-	.uber-nav > a:hover,
-	.uber-nav > a:focus {
-	  color: #da0a12;
-	  background-color: transparent;
-	}
-	.uber_right_magin{
-		margin-right: 80px;
-		font-family: Verdana, Arial, Helvetica, Trebuchet,sans-serif; 
-
-	}
-	.uber-line-left{
-		/*border-left: 1px dashed #fff;*/
-		margin: 0;
-	}
-	/*.uber-line-right{
-		border-left: 1px dashed #fff;
-		border-right:1px dashed #fff;
-		margin: 0;
-	}*/
-.uber-content-left{
-	padding: 30px;
-	color: #fff;
-
-}
 .home-middle{
 	margin-top: 20px;
 	color: #fff;
@@ -152,10 +108,7 @@ src: url(../fonts/Gotham-Bold.otf),
 	-moz-text-shadow:0px 0px 5px #2d2d2d ;
 	-o-text-shadow:0px 0px 5px #2d2d2d ;
 }
-.home-middle .col-md-6{
-	/*border-left: 1px dashed #fff;*/
-	/*background-color: rgba(0,0,0,.5);*/
-}
+
 @media(max-width: 768px){
 .home-middle .col-md-6:first-child{
 	border-bottom: 1px dashed #505050;
@@ -181,17 +134,15 @@ src: url(../fonts/Gotham-Bold.otf),
 	font-size: 18px;
 	letter-spacing: 1px;
 	margin: 0 auto;
-	
 
 }
 .home-middle ul li:before{
 content: "→";
 font-size: 14px;
-
 margin-right: 10px;
-
 line-height: 50px;
 }
+
 .uber-btn{
 	cursor: pointer;
 	overflow: auto;
@@ -239,6 +190,7 @@ line-height: 50px;
 	color: #df0009;
 
 }
+
 .uber-btn span{
 	display: block;
 	float: left;
