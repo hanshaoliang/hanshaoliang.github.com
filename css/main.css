@@ -228,6 +228,15 @@ line-height: 50px;
 	}
 
 	}
+
+@media(max-width: 1200px){
+	.home_bg .top div img{
+		width: 100%;
+	}
+}
+
+
+
 .font_content{
 	padding: 30px 40px;
 }
