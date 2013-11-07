@@ -224,6 +224,7 @@ line-height: 50px;
 		width: 15%;
 		float: left;
 		text-align: center;
+		overflow: hidden;
 	}
 
 	}
@@ -308,9 +309,21 @@ line-height: 50px;
 }
 }
 
-.help-block{
+/*.uber-add-name{
+	margin-left: 20px;
 	}
-
-
+@media(min-width: 768px){
+.uber-add-name{
+	position: fixed;
+	width: 240px;
+	height: 90px;
+	bottom: 30px;
+	right: 30px;
+	text-align: right;
+	line-height: 28px;
+	color: #fff;
+	font-weight:normal;
+}
+}*/
 
 
