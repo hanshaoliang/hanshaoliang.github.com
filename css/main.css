@@ -29,6 +29,59 @@ src: url(../fonts/Gotham-Bold.otf),
   }
 }
 
+
+
+.uber-nav{
+		border-top: 1px dashed #505050;
+		margin-top: 15px;
+		overflow: auto;
+		zoom:1;
+
+	}
+	
+	@media(min-width: 768px){
+		
+		.uber-nav a{
+		display: block;
+		float: left;
+		font-size:16px;
+		color: #fff;
+		text-decoration: none;
+		height: 55px;
+		line-height: 55px;
+
+	}
+
+	.mm-left{
+		margin-left: 90px;
+
+	}
+	
+	}
+@media(min-width: 768px) and (max-width: 1200px){
+	.mm-left{
+		margin-left: 40px;
+
+	}
+}
+
+@media(max-width: 768px){
+	.uber-nav a{
+		display: block;
+		font-size:16px;
+		color: #fff;
+		text-decoration: none;
+		height: 30px;
+		line-height: 30px;
+
+	}	
+	}
+
+	.uber-nav > a:hover,
+	.uber-nav > a:focus {
+	  color: #da0a12;
+	  background-color: transparent;
+	}
 /*.uber-nav{
 	background-color: #222222;
 	height: 50px;
@@ -77,9 +130,9 @@ src: url(../fonts/Gotham-Bold.otf),
 }*/
 
 
+/*这个是浮动导航条样式*/
 
-
-.navbar-inverse .navbar-nav > .active > a{
+/*.navbar-inverse .navbar-nav > .active > a{
 	color: #df0009;
 
 }
@@ -102,7 +155,7 @@ src: url(../fonts/Gotham-Bold.otf),
 			line-height: 50px;
 		}
 
-	}
+	}*/
 	
 	
 
