@@ -53,14 +53,14 @@ src: url(../fonts/Gotham-Bold.otf),
 	}
 
 	.mm-left{
-		margin-left: 90px;
+		margin-left: 74px;
 
 	}
 	
 	}
 @media(min-width: 768px) and (max-width: 1200px){
 	.mm-left{
-		margin-left: 40px;
+		margin-left: 35px;
 
 	}
 }
@@ -178,7 +178,7 @@ src: url(../fonts/Gotham-Bold.otf),
 }
 @media(min-width: 768px){
 .home-middle .col-md-6:last-child{
-	border-left: 1px dashed #505050;
+	border-left: 1px dashed #ccc;
 	padding-left: 30px;
 }
 }
@@ -326,7 +326,7 @@ line-height: 50px;
 @media(min-width: 768px){
 .sin_bg{
 	background:url(../images/sin_bg.png) repeat;
-	width: 80%;
+	width: 100%;
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 }
@@ -347,7 +347,7 @@ line-height: 50px;
 @media(min-width: 768px){
 .no-bg-innerPage{
 	background: url(../images/home_bg.png);
-	width: 80%;
+	width: 100%;
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 	color: #535353;
