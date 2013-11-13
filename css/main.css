@@ -326,7 +326,7 @@ line-height: 50px;
 @media(min-width: 768px){
 .sin_bg{
 	background:url(../images/sin_bg.png) repeat;
-	width: 100%;
+	width: 90%;
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 }
@@ -347,7 +347,7 @@ line-height: 50px;
 @media(min-width: 768px){
 .no-bg-innerPage{
 	background: url(../images/home_bg.png);
-	width: 100%;
+	width: 90%;
 	margin-top: 15px;
 	padding: 10px 20px 10px 20px;
 	color: #535353;
