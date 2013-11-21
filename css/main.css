@@ -53,14 +53,24 @@ src: url(../fonts/Gotham-Bold.otf),
 	}
 
 	.mm-left{
-		margin-left: 74px;
+		margin-left: 44px;
 
 	}
 	
 	}
 @media(min-width: 768px) and (max-width: 1200px){
+	.uber-nav a{
+		display: block;
+		float: left;
+		font-size:14px;
+		color: #fff;
+		text-decoration: none;
+		height: 55px;
+		line-height: 55px;
+
+	}
 	.mm-left{
-		margin-left: 35px;
+		margin-left: 28px;
 
 	}
 }
