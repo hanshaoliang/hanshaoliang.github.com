@@ -390,21 +390,39 @@ margin-right: 10px;
 }
 }
 
-/*.uber-add-name{
-	margin-left: 20px;
-	}
+
 @media(min-width: 768px){
-.uber-add-name{
-	position: fixed;
-	width: 240px;
-	height: 90px;
-	bottom: 30px;
-	right: 30px;
-	text-align: right;
-	line-height: 28px;
+.name-float{
+	z-index: 999;
+	background-color:rgba(0,0,0,.5);
+	border-radius: 10px 0px 0px 10px;
+	text-align:right;
+	line-height: 20px;
 	color: #fff;
-	font-weight:normal;
+	position: fixed;
+	bottom:10px;
+	right:-60px;
+	padding: 10px;
+	cursor: pointer;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+	    -ms-transition: all .5s ease-in-out;
+	     -o-transition: all .5s ease-in-out;
+	        transition: all .5s ease-in-out;
+	
 }
-}*/
+.name-float:hover{
+	right:0px;
+
+}
+
+
+
+
+
+
+
+
+
 
 

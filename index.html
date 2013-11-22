@@ -39,7 +39,28 @@
 			sequenceMode: 'normal',
 			resizeProportionally: true,
 			preloadImg:true,
+			sliderCallbackFunc: test
 		});
+
+		var names = [
+		'<b style="font-size:20px; font-weight:normal">Aaron Hofer</b><br/>Architect<br/>San Francisco, USA', 
+		'<b style="font-size:20px; font-weight:normal">John Xu</b><br/>Ruby on Rails Developer<br/>Shanghai, China', 
+		'<b style="font-size:20px; font-weight:normal">Bill Cheng</b><br/>.NET Developer<br/>Xi’an, China', 
+		'<b style="font-size:20px; font-weight:normal">Radhika Rao</b><br/>Bangalore<br/>India', 
+		'<b style="font-size:20px; font-weight:normal">Jack Wang</b><br/>C++ Developer<br/>Chengdu, China', 
+		'<b style="font-size:20px; font-weight:normal">Alex Lukashov</b><br/>Java Developer<br/>Kiev, Ukraine', 
+		'<b style="font-size:20px; font-weight:normal">Zach Yao</b><br/>Java Developer<br/>Hangzhou, China', 
+		'<b style="font-size:20px; font-weight:normal">Emily Baker</b><br/>Java Developer<br/>San Francisco, USA',
+		];
+		var current = 0;
+		function test(arg){
+			// bgs-current
+			// console.log(arg);
+			current++;
+			if (current == 8 )
+				current = 0;
+			$('.current-user').html(names[current]);
+		}	
 		
 	});
 
@@ -204,29 +225,12 @@ We offer companies a variety of options for acquiring exceptional engineering ta
 	</div>
 	<div class="container">
 		<div class="cop-right">© 2013 Ubertal. All rights reserved.</div>
+		
 	</div>
-
-
-
-
+	<div class="current-user name-float">
+		<b style="font-size:20px; font-weight:normal">Aaron Hofer</b><br>
+		Architect<br>
+		San Francisco, USA
+	</div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
