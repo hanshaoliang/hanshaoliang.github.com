@@ -208,14 +208,18 @@ src: url(../fonts/Gotham-Bold.otf),
 	font-size: 18px;
 	letter-spacing: 1px;
 	margin: 0 auto;
-	line-height: 50px;
+	line-height: 40px;
+	padding-left: 20px;
+	background: url(../images/jiantou.png);
+	background-repeat: no-repeat;
+	background-position: 0px 16px;
 
 }
-.home-middle ul li:before{
+/*.home-middle ul li:before{
 content: "→";
 font-size: 14px;
 margin-right: 10px;
-}
+}*/
 
 .uber-btn{
 	cursor: pointer;
