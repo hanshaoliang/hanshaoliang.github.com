@@ -407,7 +407,7 @@ margin-right: 10px;
 @media(min-width: 768px){
 .name-float{
 	z-index: 999;
-	background-color:rgba(0,0,0,.5);
+	background-color:rgba(0,0,0,.2);
 	border-radius: 10px 0px 0px 10px;
 	text-align:right;
 	line-height: 20px;
