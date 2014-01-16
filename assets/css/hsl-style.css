@@ -7,7 +7,9 @@
  * Author URI: http://azmind.com
  *
  */
-
+.navbar .brand{
+	padding: 0;
+}
 .product-description-right{
     margin-left: 30px;
 }
@@ -54,7 +56,9 @@ display: block;
 /*margin-top: 40px;*/
 }
 }
-
+.about-us_2{
+	padding: 0px 14px 0px 14px;
+}
 .about-us_2 p {
 	margin-left: 0;
 	margin-right: 0;
