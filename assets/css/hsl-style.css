@@ -18,36 +18,37 @@
 	box-shadow: none;
 	background: #f6f6f6;
 }
+/*导航条文字居中*/
 .navbar .nav>li{
 	text-align: center;
+	font-size: 18px;
 }
-
+/*鼠标hover 弹出子菜单css*/
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
 }
 
-ul.nav li.dropdown:active{
-	list-style: none;
-}
+/*二级菜单位置调整*/
+
 .navbar .pull-right>li>.dropdown-menu{
 	right: -30px;
 }
+/*二级菜单文字居左*/
 .dropdown-menu>li>a{
 	text-align: left;
 }
 
-/*////////*/
+/*二级菜单小三角符号位置移动*/
 .navbar .pull-right>li>.dropdown-menu:before, .navbar .nav>li>.dropdown-menu.pull-right:before{
 	right:80px;
 }
-
 .navbar .pull-right>li>.dropdown-menu:after, .navbar .nav>li>.dropdown-menu.pull-right:after{
 	right:81px;
 }
 
-
+/*导航条link距顶部30像素---调整链接居中*/
 .han-add-sty{
-	padding-top: 20px;
+	padding-top: 30px;
 
 }
 @media (max-width: 979px){
@@ -56,6 +57,8 @@ display: block;
 /*margin-top: 40px;*/
 }
 }
+
+/*内容文字位置css*/
 .about-us_2{
 	padding: 0px 14px 0px 14px;
 }
@@ -80,15 +83,7 @@ display: block;
 	/*border-top: 1px solid #dfdfdf;*/
 	border-bottom: 1px solid #dfdfdf;
 }
-/*.home-middle ul li:before{
-content: "→";
-font-size: 14px;
-margin-right: 10px;
-}*/
-/*.han-foot-link a:before{
-	content: "→";
-	margin-right:5px;
-}*/
+
 .han-foot-link a{
 	margin-left: 50px;
 	display: block;
