@@ -5,14 +5,14 @@ jQuery(document).ready(function() {
         Product showcase background
     */
     $('.product-showcase').backstretch([
-      "images-han/lunxun_01.jpg"
-    , "images-han/lunxun_02.jpg"
-    , "images-han/lunxun_03.jpg"
-    , "images-han/lunxun_04.jpg"
-    , "images-han/lunxun_05.jpg"
-    , "images-han/lunxun_06.jpg"
-    , "images-han/lunxun_07.jpg"
-    , "images-han/lunxun_08.jpg"
+      "images-han/index-bg.jpg"
+    // , "images-han/lunxun_02.jpg"
+    // , "images-han/lunxun_03.jpg"
+    // , "images-han/lunxun_04.jpg"
+    // , "images-han/lunxun_05.jpg"
+    // , "images-han/lunxun_06.jpg"
+    // , "images-han/lunxun_07.jpg"
+    // , "images-han/lunxun_08.jpg"
     ], {duration: 3000, fade: 750});
 
     /*

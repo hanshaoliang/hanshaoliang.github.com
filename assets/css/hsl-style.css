@@ -7,6 +7,30 @@
  * Author URI: http://azmind.com
  *
  */
+ .product-showcase-overview{
+ 	background: url(../../images-han/08.jpg) 30%;
+
+ }
+ .product-showcase-management{
+ 	background: url(../../images-han/05.jpg) 30%;
+
+ }
+ .product-showcase-sampleclients{
+ 	background: url(../../images-han/amrkan.jpg) 50%;
+
+ }
+ .product-showcase-it{
+ 	background: url(../../images-han/product-incubation.jpg) 50%;
+ }
+ .product-showcase-custom{
+ 	background: url(../../images-han/lanse.jpg) 50%;
+ }
+.product-showcase-current{
+	background: url(../../images-han/loufang.jpg) 50%;
+}
+.product-showcase-contact{
+	background: url(../../images-han/diqiu.jpg) 50%;
+}
 .navbar .brand{
 	padding: 0;
 }
