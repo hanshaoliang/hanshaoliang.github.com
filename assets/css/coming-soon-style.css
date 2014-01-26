@@ -67,7 +67,7 @@ a:hover { text-decoration: none; }
 
 .product-showcase-pattern {
     margin: 0 auto;
-    background-image: url(../img/pattern-2.png);
+    /*background-image: url(../img/pattern-2.png);*/
     -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
