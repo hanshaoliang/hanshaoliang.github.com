@@ -16,7 +16,7 @@
 
  }
  .product-showcase-sampleclients{
- 	background: url(../../images-han/amrkan.jpg) 50%;
+ 	background: url(../../images-han/loufang.jpg) 50%;
 
  }
  .product-showcase-it{
@@ -26,11 +26,16 @@
  	background: url(../../images-han/lanse.jpg) 50%;
  }
 .product-showcase-current{
-	background: url(../../images-han/loufang.jpg) 50%;
+	background: url(../../images-han/amrkan.jpg) 50%;
 }
+
 .product-showcase-contact{
 	background: url(../../images-han/diqiu.jpg) 50%;
 }
+
+
+
+
 .navbar .brand{
 	padding: 0;
 }
