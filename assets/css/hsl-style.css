@@ -32,9 +32,14 @@
 .product-showcase-contact{
 	background: url(../../images-han/diqiu.jpg) 50%;
 }
-
-
-
+.span12 p{
+	line-height: 30px;
+}
+.span10{
+	line-height: 30px;
+}
+.span2{padding-top: 10px;
+}
 
 .navbar .brand{
 	padding: 0;
