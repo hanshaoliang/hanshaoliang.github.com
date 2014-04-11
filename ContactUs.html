@@ -31,7 +31,7 @@
 	
         //  Initialize Backgound Stretcher	   
 		$('.demoo').bgStretcher({
-			images: ['images/ubertal_bg_32.jpg'],
+			images: ['images/ubertal_bg_34.jpg'],
 			imageWidth: 2000, 
 			imageHeight: 1101, 
 			slideDirection: 'N',
@@ -45,7 +45,6 @@
 	});
 
 </script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,6 +55,29 @@
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+	$(function(){
+		$("#formIframe").load(iframeLoaded)
+	});
+ 
+
+	var counter = 0;
+	function iframeLoaded(){
+		if(counter === 1){
+			loadCompleteMessage();
+		}
+		
+		counter++;
+	}
+
+	function loadCompleteMessage(){
+		$('#completeMessage').text('Your email is sent');
+	}
+
+
+</script>
+
 
 <style type="text/css">
 	body{
@@ -76,6 +98,13 @@
 		font-size: 12px;
 
 	}
+	
+
+
+
+
+
+
 </style>
 <title>UBERTAL</title>
 </head>
@@ -127,12 +156,11 @@
 
 	</div>
 </div>
-
 <div style="background:rgba(0,0,0,.5); height:40px; line-height:40px; color:#fff;">
 		<div class="container">	
 			<div class="">
 				<div class="pull-left">
-				联系我们：650-394-5378
+				联系电话：650-394-5378
 				</div>
 				
 		 	</div>
@@ -144,65 +172,53 @@
 
 	<div class="container">
 		<div class="no-bg-innerPage">
-			<h1>Current Openings</h1>
-			<div style="padding-bottom:20px; line-height:32px;  font-size:18px;">
-				<li style="list-style:none;   border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="software.html">Senior Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<!-- <li style="list-style:none;  border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="productmanager.html">Product Manager, Broker Dealer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li> -->
-				<!-- <li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="senior.html">Senior Engagement Marketing Manager</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li> -->
+			<h1>联系我们</h1>
+			<div style="margin-bottom:10px; line-height:24px; font-size:16px; ">
+				<span>公司地址: 303 Twin Dolphin Drive, 6th Floor Redwood Shores, CA 94065</span>
+	            <span style="margin-left:30px;">联系电话: 650-394-5378</span><br>
+	            <span style="margin-left:0px;">公司邮箱: info@ubertal.com</span>
+       		</div>
+			<div style="padding-bottom:20px;">
+				
+				<iframe id="formIframe" src="contact-form.html" frameborder="no"></iframe>
+				<div id="completeMessage" class="retun-box"></div>
 
-				<!-- 新feedback 增加职位 -->
+				<!-- <form role="form">
 
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-1.html">Quality Engineer</a></span>
-					<span style="font-size:14px;">Austin, TX</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-2.html">Senior Software Engineer</a></span>
-					<span style="font-size:14px;">Austin, TX</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-3.html">Software Engineer - UI</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-4.html">Sr. QA Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-5.html">Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
+                	  <div class="form-group ">
+					    <label for="exampleInputName1">Company Name</label>
+					    <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Company Name">
+					  </div>
 
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-6.html">Sr. Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-7.html">Sr. Software Engineer, Javascript</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
+					  <div class="form-group ">
+					    <label for="exampleInputName1">Contact Name</label>
+					    <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Contact Name">
+					  </div>
+					  
+					  <div class="form-group ">
+					    <label for="exampleInputPhone1">Phone Number</label>
+					    <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="Phone Number">
+					  </div>
 
+					  <div class="form-group ">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+					  </div>
+					   <div class="form-group ">
+					    <label for="exampleInputName1">Company website</label>
+					    <input type="text" class="form-control" id="exampleInputName1" placeholder="Company website">
+					  </div>
 
+					  <div class="form-group ">
+					    <label for="exampleInputName1">How can we help?</label>
+					    <textarea class="form-control" rows="3"></textarea>
+					    
+					  </div>				  
+					  <button type="submit" class="btn btn-default">Submit</button>
+			    </form> -->
+		    </div>
 
-
-
-
-
-
-
-
-
-
-			</div>
+		</div>
 	</div>
 	
 	
@@ -212,30 +228,13 @@
 
 <div class="current-user name-float">
 		<div>
-			Android Developer<br>
-		Shanghai, China
+			Java Developer<br>
+		Xi'an, China
 		</div>
 	</div>
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </html>

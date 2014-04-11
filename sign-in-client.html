@@ -31,7 +31,7 @@
 	
         //  Initialize Backgound Stretcher	   
 		$('.demoo').bgStretcher({
-			images: ['images/ubertal_bg_32.jpg'],
+			images: ['images/ubertal_bg_37.jpg',],
 			imageWidth: 2000, 
 			imageHeight: 1101, 
 			slideDirection: 'N',
@@ -54,6 +54,28 @@
 
   ga('create', 'UA-46441936-1', 'ubertal.com');
   ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		$("#formIframe").load(iframeLoaded)
+	});
+ 
+
+	var counter = 0;
+	function iframeLoaded(){
+		if(counter === 1){
+			loadCompleteMessage();
+		}
+		
+		counter++;
+	}
+
+	function loadCompleteMessage(){
+		$('#completeMessage').text('Your email is sent');
+	}
+
 
 </script>
 
@@ -128,6 +150,7 @@
 	</div>
 </div>
 
+
 <div style="background:rgba(0,0,0,.5); height:40px; line-height:40px; color:#fff;">
 		<div class="container">	
 			<div class="">
@@ -142,98 +165,33 @@
 
 
 
+
+
 	<div class="container">
 		<div class="no-bg-innerPage">
-			<h1>Current Openings</h1>
-			<div style="padding-bottom:20px; line-height:32px;  font-size:18px;">
-				<li style="list-style:none;   border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="software.html">Senior Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<!-- <li style="list-style:none;  border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="productmanager.html">Product Manager, Broker Dealer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li> -->
-				<!-- <li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="senior.html">Senior Engagement Marketing Manager</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li> -->
-
-				<!-- 新feedback 增加职位 -->
-
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-1.html">Quality Engineer</a></span>
-					<span style="font-size:14px;">Austin, TX</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-2.html">Senior Software Engineer</a></span>
-					<span style="font-size:14px;">Austin, TX</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-3.html">Software Engineer - UI</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-4.html">Sr. QA Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-5.html">Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-6.html">Sr. Software Engineer</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-				<li style="list-style:none;   border-bottom:1px dashed #ccc; display:block; zoom:1;">
-					<span style="display:block; float:left; width:700px;"><a href="new-add-7.html">Sr. Software Engineer, Javascript</a></span>
-					<span style="font-size:14px;">San Francisco, CA</span>
-				</li>
-
-
-
-
-
-
-
-
-
-
-
-
+			<h1>Join As A Client</h1>
+			<div style="padding-bottom:20px;">
+				<iframe id="formIframe" src="contact-form.html" frameborder="no"></iframe>
+				<div id="completeMessage" class="retun-box"></div>
 			</div>
+		</div>
 	</div>
 	
 	
 	<div class="container">
+
 		<div class="cop-right">© 2014 Ubertal. All rights reserved.</div>
 	</div>
-
 <div class="current-user name-float">
 		<div>
-			Android Developer<br>
-		Shanghai, China
+			C++ Developer<br>
+		Mexico City,  Mexico
 		</div>
 	</div>
 
 
+
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

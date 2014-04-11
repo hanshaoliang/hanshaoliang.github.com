@@ -1,240 +1,224 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- <meta name="viewport" content="width=480; initial-scale=0.6666;  maximum-scale=1.0; minimum-scale=0.8" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0;  ">
+<meta name="apple-mobile-web-app-title" content="UBERTAL" /> <!-- app title -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><!-- 设置状态栏为黑色 -->
+<!--手机icon-->
+<link rel="apple-touch-icon-precomposed" href="http://stephan-siegrist.ch/images/core/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/bitbug_favicon.ico" /><!-- html 添加图标 -->
+<link rel="icon" href="images/bitbug_favicon.ico" />
+<!-- css --> 
+<!--[if gte IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie8.css"  type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie7.css" type="text/css" media="screen"  /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection"><![endif]-->
 
-    <head>
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" /><!-- 调用背景切换插件css -->
 
-        <meta charset="utf-8">
-        <title>Ubertal Technology</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/><!-- bootstrap css 调用 -->
+<link rel="stylesheet" type="text/css" href="css/main.css" /><!-- 页面覆盖用css -->
 
-        <!-- CSS -->
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="assets/css/social-icons.css">
-        <link rel="stylesheet" href="assets/css/coming-soon-style.css">
-        <link rel="stylesheet" href="assets/css/hsl-style.css"><!-- 覆盖css -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!-- 调用背景切换插件js -->
+<script type="text/javascript" src="js/jquery-bgstretcher-3.0.1.min.js"></script><!-- 调用背景切换插件js -->
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/bitbug_favicon.ico">
-        <link rel="icon" href="assets/ico/bitbug_favicon.ico" />
-        <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+        //  Initialize Backgound Stretcher	   
+		$('.demoo').bgStretcher({
+			images: ['images/ubertal_bg_37.jpg'],
+			imageWidth: 2000, 
+			imageHeight: 1101, 
+			slideDirection: 'N',
+			slideShowSpeed: 2000,
+			nextSlideDelay: 6000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			resizeProportionally: true
+		});
+		
+	});
 
+</script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    </head>
+  ga('create', 'UA-46441936-1', 'ubertal.com');
+  ga('send', 'pageview');
 
-    <body>
+</script>
 
-        <div class="container">
-            <div class="header row">
-                <div class="span12">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <a class="btn btn-navbar han-dingwei" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </a>
-                            <h1>
-                                <a class="brand" href="index.html"><img src="images-han/logo2.png"></a>
-                            </h1>
+<style type="text/css">
+	body{
+		padding-top: 39px;
+	}
+	.home_bg{
+		background: url(images/home_bg.png);
+		overflow: auto;
+		zoom:1;
+		padding-bottom: 30px;
 
-                            <div class="nav-collapse collapse han-add-sty">
-                                <ul class="nav pull-right">
-                                    <li class="dropdown">
+	}
+	.cop-right{
+		text-align: center;
+		height: 80px;
+		line-height: 80px;
+		color: #fff;
+		font-size: 12px;
 
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-user"></i><br />Who We Are</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="overview.html">Overview</a></li>
-                                            <li><a href="management.html">Management Team</a></li>
-                                            <li><a href="sampleclients.html">Sample Clients</a></li>
+	}
+</style>
+<title>UBERTAL</title>
+</head>
+<body class="demoo">
+<div class="container">
+	<div class="header">
+		<div class="row">
+			<div class="col-md-4"><a href="index.html"><img src="images/logo.png" class="img-responsive"></a></div>
+			<div class="col-md-8"> <span class="logo_font">一流的人才 <b style="font-size:16px;">•</b> 一流的公司</span></div>
+		</div>
 
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-tasks"></i><br />What We Do</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="it-services.html">IT Services</a></li>
-                                            <li><a href="Staffing-services.html">Staffing Services</a></li>
-                                            <li><a href="Government-services.html">Government Services</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-road"></i><br />Careers</a>
-                                        <ul class="dropdown-menu" style="right:-50px;">
-                                            <li><a href="current.html">Current Openings</a></li>
-                                            <li><a href="submit.html">Submit Your Resume</a></li> 
-                                        </ul>
-                                    </li>
-                            
-                                    <li>
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('contact.html','_self')"><i class="icon-envelope-alt"></i><br />Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<nav class="navbar navbar-default" role="navigation" style="border-top:1px dashed #505050; margin-top:10px; padding-top:10px;">
+  <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <!-- <a class="navbar-brand" href="index.html">HOME</a> -->
+			</div>
 
-        
-            
-        
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			    	<li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们</a>
+				        <ul class="dropdown-menu">
+				          <li><a href="what-we-do.html">公司介绍</a></li>
+				          <li><a href="why-ubertal.html">选择我们</a></li>
+				        </ul>
+			        </li>
+			        <li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">团队介绍</a>
+				        <ul class="dropdown-menu">
+				          <li><a href="management.html">管理团队</a></li>
+				          <li><a href="advisors.html">顾问</a></li>
+				        </ul>
+			        </li>
+				  <!-- <li ><a href="the-process.html">ENGAGEMENT MODEL</a></li>  -->
+				    <li><a href="sample.html">工程师</a></li>
+				    <li><a href="FAQ.html">FAQ</a></li>
+				    <li><a href="Current.html">人才招聘</a></li>
+				    <li><a href="ContactUs.html">联系我们</a></li>
+			    </ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
 
-        <!-- Coming Soon -->
-        <div class="product-showcase-management">
-            <div class="product-showcase-pattern">
-                <div class="container">
-                    <div class="row" style="height:240px;">
-                       <!-- <div class="span12 product-background"> 
-                            <div class="row"> -->
-                                <!-- <div class="span6">
-                                    <h1>We are <strong>coming soon</strong></h1>
-                                    <div class="product-description">
-                                        <div class="timer">
-                                            <span class="days"></span> days /
-                                            <span class="hours"></span> hours /
-                                            <span class="minutes"></span> minutes /
-                                            <span class="seconds"></span> seconds
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="span6">
-                                    <div class="product-description product-description-right">
-                                        <p>We are working very hard on the new version of our site. It will bring a lot of new features. Enter your email in the form below and we’ll notify you as soon as we’re ready:</p>
-                                        <form action="assets/subscribe.php" method="post" class="subscribe">
-                                            <input type="text" name="email" class="email" placeholder="Enter your email">
-                                            <button type="submit">Subscribe!</button>
-                                        </form>
-                                    </div>
-                                </div> -->
-                           <!--  </div>
-                        </div>  -->
-                    </div>
-                </div>
-            </div>
-        </div>
+	</div>
+</div>
 
-        <!-- Content -->
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                        <h3>Management</h3>
-                        <div class="row">
-                        <div class="span2"><img src="images-han/pavan_photo.jpg" style="width:100%; margin-top:10px;"></div>
-                        <div class="span10"><h3>Pavan Kochar</h3> 
-        <h4>Co-Founder and CEO</h4>
-        <p>Pavan possesses a breadth of experience from global consulting, with an emphasis on building software engineering teams in China and India, to founding companies. Prior to SKT Lab, Pavan held leadership positions at a number of global technology consulting services firms, including VanceInfo (now Pactera), Infosys, Accenture and Deloitte Consulting. As Senior Principal, Innovative Solutions at Infosys Consulting, Pavan pioneered the integration of Infosys's BPO, Technologies and Consulting services into a unified offering for Cisco. At Valdero, a Kleiner Perkins-funded supply chain startup, Pavan was vital to both product development and client acquisition.</p> 
-
-        <p>Pavan founded the Dallas-Fort Worth chapter of TIE (The Indus Entrepreneurs) as well as Grapevine, a startup forum in the pre-accelerator era. She was also a Board Member at Indus Womens Leaders.</p>
-
-        <p>Pavan holds a B.S in Computer Science Engineering from the University of Illinois at Urbana-Champaign where she was honored as a Knight of St. Pat.</p></div>
-                        </div>
-
-                        
-
-                <div class="row">
-                    <div class="span2"><img src="images-han/hui_photo02.jpg" style="width:100%; margin-top:10px;"></div>
-                    <div class="span10"><h3>Hue Wang</h3>
-<h4>Co-Founder and CTO</h4>
-<p>Hue has Over 20 years of experience in architecture, design, and development of server, desktop and mobile software systems. He held senior technical leadership positions at a number of world famous software and internet companies. </p>
-
-<p>Hue has a M.S. degree in Computing and Information Sciences from Rochester Institute of Technology, and Bachelor of Engineering degree in Electrical Engineering from Zhejiang University.</p></div>
-
-                </div>
-                <div class="row">
-                    <div class="span2"><img src="images-han/oto02.jpg" style="width:100%; margin-top:10px;"></div>
-                    <div class="span10"><h3>Bowen Wang</h3>
-<h4>Advisor</h4>
-<p>Bowen is an innovative product leader and entrepreneur with 15+ years’ experience in enterprise software, with a focus in eGovernment and smart city solutions.  He was the senior vice president at Accela overseeing the engineering department of the industry’s leading software vendor for government licensing, permitting, and asset management system, with over 500 federal, state, and local government customers worldwide. He brings a unique combination of strong technical background, in-depth understanding of product management and business development, and first-hand experience with enterprise government software solutions. Prior to joining Accela, Mr. Wang directed architecture and system integration at Capgemini Government Solutions for a major software project at the State of Nevada. Before that, Mr. Wang served as the product strategy director for public sector industry at Oracle Corporation, managing CRM product releases and go-to-market strategy. Earlier, Mr. Wang was an engineering lead at a number of software companies, including Siebel Systems, Syncsort Incorporated, and Bristol Technologies.</p>
-
-<p>Mr. Wang graduated from the University of California, Berkeley, with an M.B.A. He also holds a Master of Science in computer science from Ohio University, and a Bachelor of Science in materials engineering from Shanghai Jiao Tong University in China.</p></div>
-
-                </div>
+<div style="background:rgba(0,0,0,.5); height:40px; line-height:40px; color:#fff;">
+		<div class="container">	
+			<div class="">
+				<div class="pull-left">
+				联系电话：650-394-5378
+				</div>
+				
+		 	</div>
+		</div>
+	</div>
 
 
-                </div>
-                
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span4 han-foot-link">
-                        <h3>Main Pages</h3>
-                        <a href="overview.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Overview</a>
-                        <a href="management.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Management Team</a>
-                        <a href="sampleclients.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Sample Clients</a>
-                        <a href="it-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>IT Services</a>
-                        <a href="Staffing-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Staffing Services</a>
-                        <a href="Government-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Government Services</a>
-                        <a href="current.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Current Openings</a>
-                        <a href="submit.html" style="border-bottom:none;"><i class="icon-chevron-right" style="margin-right:10px;"></i>Submit Your Resume</a>
-                    </div>
-                    <!-- <div class="span4 flickr-photos">
-                        <h3>Flickr Photos</h3>
-                        <ul class="flickr-feed"></ul>
-                    </div> -->
-                    <div class="span4 contact-us">
-                        <h3>Contact Us</h3>
-                        <form action="assets/contact.php" method="post">
-                            <input type="text" name="name" class="name" placeholder="Name">
-                            <input type="text" name="email" class="email" placeholder="Email">
-                            <textarea name="message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12">
-                        <div class="social-links">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="dribbble" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="googleplus" href="#"></a>
-                            <a class="skype" href="#"></a>
-                            <a class="youtube" href="#"></a>
-                            <a class="vimeo" href="#"></a>
-                            <a class="forrst" href="#"></a>
-                            <a class="email" href="#"></a>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12 copyright">
-                        <p>Copyright Ubertal Technology, Inc. 2013. All rights reserved.</p>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </footer>
 
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/jquery.tweet.js"></script>
-        <script src="assets/js/jflickrfeed.js"></script>
-        <script src="assets/js/jquery.countdown.js"></script>
-        <script src="assets/js/coming-soon-scripts.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.js"></script>
+	<div class="container">
+		<div class="no-bg-innerPage">
+			<h1>管理团队</h1>
+			<div class="row" style="border-bottom:1px dashed #ccc;">
+					<div class="col-md-3">
+						<img src="images/pavan_photo.jpg" style="width:100%; margin-top:24px;">
+					</div>
+					<div class="col-md-9">
+						<h3>Pavan Kochar</h3>
+						<h4>联合创始人&首席执行官</h4>
+						<p style="font-size:16px;line-height:32px;">Pavan在SKTLab负责客户及合作伙伴的拓展及维系，有着丰富的全球咨询经验，并着重在中国、印度打造软件工程团队，建立新公司。在进入SKTLab之前，Pavan 在许多全球技术咨询服务企业担任高层。其中包括：VanceInfo (现在是Pactera), Infosys, Accenture和Deloitte Consulting。做为Infosys咨询顾问的高级负责人，Pavan 为Cisco公司开创了集业务外包流程、技术和咨询服务为一体的创新模式。在Valdero，一个由Kleiner Perkins出资创办的供应链，Pavan则同时兼顾产品及客户的开发。</p>
+						<p style="font-size:16px;line-height:32px;">Pavan创立了TIE（印度企业家协会）在Dallas-Fort Worth的分会以及Grapevine，一个创业论坛。她本人同时也是Indus Womens Leaders的董事会成员。</p>
+						<p style="font-size:16px;line-height:32px;">Pavan本科毕业于伊利诺伊大学（University of Illinois），计算机科学工程学士学位，在校期间，曾获St.Pat骑士殊荣。</p>
+					</div>
+			</div>
+			<div class="row" style="border-bottom:1px dashed #ccc;">
+					<div class="col-md-3">
+						<img src="images/vince_photo.jpg" style="width:100%; margin-top:24px;">
+					</div>
+					<div class="col-md-9">
+						<h3>Vince Xu</h3>
+						<h4>联合创始人&执行副总裁</h4>
+						<p style="font-size:16px;line-height:32px;">作为SKT Lab的CEO和创始人之一,Vince以其在全球咨询和产品开发超过20多年的经验引领着公司的发展，投身于软件行业多年，是一个活跃的天使投资人。曾在Infosys担任任咨询顾问一职,为多个高科技领域提供软件解决方案。在此之前，Vince曾分别在Oracle、Selectica、BEA从事软件产品开发管理工作。</p>
+
+						<p style="font-size:16px;line-height:32px;">在硅谷，Vince是不少初创公司的投资人、董事会成员。在全球最大的天使投资联盟/协会—Kerietsu Forum中，也是一名活跃会员。</p>
+
+						<p style="font-size:16px;line-height:32px;">Vince本科毕业于中国四川大学，计算机科学学士学位；硕士毕业于耶鲁大学（Yale University），MBA。</p>
+					</div>
+			</div>
+			<div class="row" style="border-bottom:1px dashed #ccc;">
+					<div class="col-md-3">
+						<img src="images/hui_photo02.jpg" style="width:100%; margin-top:24px;">
+					</div>
+					<div class="col-md-9">
+						<h3>Hue Wang</h3>
+						<h4>首席技术执行官</h4>
+						<p style="font-size:16px;line-height:32px;">Hue在架构、设计、开发服务器、桌面及手机软件系统方面有着20多年的经验，在许多世界级的软件及互联网公司都担任过高层。</p>
+						<p style="font-size:16px;line-height:32px;">Hue本科毕业于浙江大学，电气工程学学士学位，硕士毕业于罗彻斯特理工学院（Rochester Institute of Technology），计算机与信息科学。</p>
+
+				
+
+					</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="cop-right">© 2014 Ubertal. All rights reserved.</div>
+	</div>
+
+<div class="current-user name-float">
+		<div>
+			Python Developer<br>
+		Chicago, USA
+		</div>
+	</div>
 
 
-    </body>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
-

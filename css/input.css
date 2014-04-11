@@ -1,0 +1,37 @@
+li{
+	list-style: none;
+	font-size: 14px;
+}
+ul{
+	margin-left: 10px;
+	padding-left: 0px;
+}
+.emf-label-desc{
+	color: #535353;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	
+}
+.form-control {
+	border-radius: 0;
+}
+#emf-li-post-button{
+	margin-top: 20px;
+}
+#outer-after-post{
+	display: none;
+}
+#emf-container{
+	margin-left: 0;
+}
+#emf-container #emf-form.leftLabel div.emf-div-field{
+	float: none;
+}
+#emf-container ul li{
+	margin: 0;
+	padding: 0;
+}
+#emf-form input{
+	padding: 6px 12px !important;
+	margin-top: 10px;
+}

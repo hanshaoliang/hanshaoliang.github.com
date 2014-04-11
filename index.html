@@ -1,252 +1,295 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- <meta name="viewport" content="width=480; initial-scale=0.6666;  maximum-scale=1.0; minimum-scale=0.8" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0;  ">
+<meta name="apple-mobile-web-app-title" content="UBERTAL" /> <!-- app title -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><!-- 设置状态栏为黑色 -->
+<!--手机icon-->
+<link rel="apple-touch-icon-precomposed" href="http://stephan-siegrist.ch/images/core/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/bitbug_favicon.ico" /><!-- html 添加图标 -->
+<link rel="icon" href="images/bitbug_favicon.ico" />
+<!-- css --> 
+<!--[if gte IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie8.css"  type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="http://stephan-siegrist.ch/styles/ie7.css" type="text/css" media="screen"  /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection"><![endif]-->
 
-    <head>
-
-        <meta charset="utf-8">
-        <title>Ubertal Technology</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <!-- CSS -->
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="assets/css/social-icons.css">
-        <link rel="stylesheet" href="assets/css/coming-soon-style.css">
-        <link rel="stylesheet" href="assets/css/hsl-style.css"><!-- 覆盖css -->
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/bitbug_favicon.ico">
-        <link rel="icon" href="assets/ico/bitbug_favicon.ico" />
-        <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" /><!-- 调用背景切换插件css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 
 
-    </head>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script><!-- 调用背景切换插件js -->
+<script type="text/javascript" src="js/jquery-bgstretcher-3.0.1.min.js"></script><!-- 调用背景切换插件js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <body>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+        //  Initialize Backgound Stretcher	   
+		$('.demoo').bgStretcher({
+			images: ['images/ubertal_bg_30.jpg', 'images/ubertal_bg_19.jpg','images/ubertal_bg_20.jpg', 'images/ubertal_bg_18.jpg','images/ubertal_bg_22.jpg', 'images/ubertal_bg_17.jpg', 'images/ubertal_bg_27.jpg', 'images/ubertal_bg_28.jpg',],
+			imageWidth: 2000, 
+			imageHeight: 1101, 
+			slideDirection: 'N',
+			slideShowSpeed: 2000,
+			nextSlideDelay: 8000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			resizeProportionally: true,
+			preloadImg:true,
+			sliderCallbackFunc: test
+		});
 
-        <!-- Header -->
-        <!-- <div class="container">
-            <div class="header row">
-                <div class="logo span4">
-                    <h2><a href="">Produkta</a></h2>
-                </div>
-                <div class="tel-skype span8">
-                    <p><i class="icon-phone-sign"></i> Phone: 0039 123 45 679 <span class="pipe">|</span> <i class="icon-user"></i> Skype: hello@domain.com</p>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Header -->
-        <div class="container">
-            <div class="header row">
-                <div class="span12">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <a class="btn btn-navbar han-dingwei" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </a>
-                            <h1>
-                                <a class="brand" href="index.html"><img src="images-han/logo2.png"></a>
-                            </h1>
-
-                            <div class="nav-collapse collapse han-add-sty">
-                                <ul class="nav pull-right">
-                                    <li class="dropdown">
-
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-user"></i><br />Who We Are</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="overview.html">Overview</a></li>
-                                            <li><a href="management.html">Management Team</a></li>
-                                            <li><a href="sampleclients.html">Sample Clients</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-tasks"></i><br />What We Do</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="it-services.html">IT Services</a></li>
-                                            <li><a href="Staffing-services.html">Staffing Services</a></li>
-                                            <li><a href="Government-services.html">Government Services</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('#','_self')"><i class="icon-road"></i><br />Careers</a>
-                                        <ul class="dropdown-menu" style="right:-50px;">
-                                            <li><a href="current.html">Current Openings</a></li>
-                                            <li><a href="submit.html">Submit Your Resume</a></li> 
-                                        </ul>
-                                    </li>
-                            
-                                    <li>
-                                        <a href="#" data-toggle="dropdown" onClick="javascript:window.open('contact.html','_self')"><i class="icon-envelope-alt"></i><br />Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-            
-        
-
-        <!-- Coming Soon -->
-        <div class="product-showcase">
-            <div class="product-showcase-pattern">
-                <div class="container">
-                    <div class="row" style="height:440px;">
-                       <!-- <div class="span12 product-background"> 
-                            <div class="row"> -->
-                                <!-- <div class="span6">
-                                    <h1>We are <strong>coming soon</strong></h1>
-                                    <div class="product-description">
-                                        <div class="timer">
-                                            <span class="days"></span> days /
-                                            <span class="hours"></span> hours /
-                                            <span class="minutes"></span> minutes /
-                                            <span class="seconds"></span> seconds
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="span6">
-                                    <div class="product-description product-description-right">
-                                        <p>We are working very hard on the new version of our site. It will bring a lot of new features. Enter your email in the form below and we’ll notify you as soon as we’re ready:</p>
-                                        <form action="assets/subscribe.php" method="post" class="subscribe">
-                                            <input type="text" name="email" class="email" placeholder="Enter your email">
-                                            <button type="submit">Subscribe!</button>
-                                        </form>
-                                    </div>
-                                </div> -->
-                           <!--  </div>
-                        </div>  -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" style="padding-top:15px; padding-bottom:10px; border-bottom:1px dashed #6e6e6e; ">
-            <div class="row" >
-                <div class="span2">
-                    <img src="images-han/360.png">
-                </div>
-                <div class="span2">
-                    <img src="images-han/art.png">
-                </div>
-                <div class="span2">
-                    <img src="images-han/aiv.png">
-                </div>
-                <div class="span2">
-                    <img src="images-han/axel.png">
-                </div>
-                <div class="span2">
-                    <img src="images-han/chuwa.png">
-                </div>
-                <div class="span2">
-                    <img src="images-han/Shinelogo.png">
-                </div>
-            </div>
-        </div>
-
-        <!-- Content -->
-        <div class="container">
-
-            <div class="row">
-                <div class="span12">
-                    <!-- about us -->
-                    <div class="about-us_2">
-                        <h4>Who We Are</h4>
-
-<p>Ubertal Technology is an IT and Software Development services company specializing in IT architecture design, end-to-end project implementation, and custom software development for the High Tech and Government industries. As a premier services company, our customers are our top priority and your success is our objective. </p>
-
-<p>At Ubertal Technology, we value the long-term relationships we establish with our customers—and are proud to have 100% client satisfaction. Our engineering teams work together with our customers to understand their specific requirements and to create a common, shared business goal. Our value proposition is rooted on our belief that the success of any initiative is based on the quality of the people getting it done. We are focused on providing only the highest quality teams to lead and support our clients’ initiatives. </p>
-
-                    </div>
-
-                </div>
-                
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span4 han-foot-link">
-                        <h3>Main Pages</h3>
-                        <a href="overview.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Overview</a>
-                        <a href="management.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Management Team</a>
-                        <a href="sampleclients.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Sample Clients</a>
-                        <a href="it-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>IT Services</a>
-                        <a href="Staffing-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Staffing Services</a>
-                        <a href="Government-services.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Government Services</a>
-                        <a href="current.html"><i class="icon-chevron-right" style="margin-right:10px;"></i>Current Openings</a>
-                        <a href="submit.html" style="border-bottom:none;"><i class="icon-chevron-right" style="margin-right:10px;"></i>Submit Your Resume</a>
-                    </div>
-                    <!-- <div class="span4 flickr-photos">
-                        <h3>Flickr Photos</h3>
-                        <ul class="flickr-feed"></ul>
-                    </div> -->
-                    <div class="span4 contact-us">
-                        <h3>Contact Us</h3>
-                        <form action="assets/contact.php" method="post">
-                            <input type="text" name="name" class="name" placeholder="Name">
-                            <input type="text" name="email" class="email" placeholder="Email">
-                            <textarea name="message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12">
-                        <div class="social-links">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="dribbble" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="googleplus" href="#"></a>
-                            <a class="skype" href="#"></a>
-                            <a class="youtube" href="#"></a>
-                            <a class="vimeo" href="#"></a>
-                            <a class="forrst" href="#"></a>
-                            <a class="email" href="#"></a>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-                <div class="row">
-                    <div class="span12 copyright">
-                        <p>Copyright Ubertal Technology, Inc. 2013. All rights reserved.</p>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </footer>
+		var names = [
+		'.NET Developer<br/>Hyderabad, India', 
+		'Java Developer<br/>Hangzhou, China', 
+		'Android Developer<br/>Xi’an, China', 
+		'QA Engineer<br/>Bangalore, India', 
+		'C++ Developer<br/>Chengdu, China', 
+		'Java Developer<br/>Kiev, Ukraine', 
+		'Ruby on Rails Developer<br/>Hangzhou, China', 
+		'Java Developer<br/>San Francisco, USA',
+		];
+		var current = 0;
+		function test(arg){
+			// bgs-current
+			// console.log(arg);
+			current++;
+			if (current == 8 )
+				current = 0;
 
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/jquery.tweet.js"></script>
-        <script src="assets/js/jflickrfeed.js"></script>
-        <script src="assets/js/jquery.countdown.js"></script>
-        <script src="assets/js/coming-soon-scripts.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.js"></script>
+			
+			$('.current-user div').fadeOut(1000, function(){
+				$('.current-user div').html(names[current]);
+				$('.current-user div').fadeIn(1000);
+			});
+		}
+	});
+
+</script>
 
 
-    </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-46441936-1', 'ubertal.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<style type="text/css">
+	body{
+		padding-top: 39px;
+	}
+	.home_bg{
+		background: url(images/home_bg.png);
+		overflow: auto;
+		zoom:1;
+		padding-bottom: 30px;
+
+	}
+	.cop-right{
+		text-align: center;
+		height: 80px;
+		line-height: 80px;
+		color: #fff;
+		font-size: 12px;
+
+	}
+
+</style>
+<title>UBERTAL</title>
+</head>
+<body class="demoo">
+<div class="container">
+	<div class="header">
+		<div class="row">
+			<div class="col-md-4"><a href="index.html"><img src="images/logo.png" class="img-responsive"></a></div>
+			<div class="col-md-8"> <span class="logo_font">一流的人才 <b style="font-size:16px;">•</b> 一流的公司</span></div>
+		</div>
+
+		<nav class="navbar navbar-default" role="navigation" style="border-top:1px dashed #505050; margin-top:10px; padding-top:10px;">
+  <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <!-- <a class="navbar-brand" href="index.html">HOME</a> -->
+			</div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			    	<li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们</a>
+				        <ul class="dropdown-menu">
+				          <li><a href="what-we-do.html">公司介绍</a></li>
+				          <li><a href="why-ubertal.html">选择我们</a></li>
+				        </ul>
+			        </li>
+			        <li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">团队介绍</a>
+				        <ul class="dropdown-menu">
+				          <li><a href="management.html">管理团队</a></li>
+				          <li><a href="advisors.html">顾问</a></li>
+				        </ul>
+			        </li>
+				  <!-- <li ><a href="the-process.html">ENGAGEMENT MODEL</a></li>  -->
+				    <li><a href="sample.html">工程师</a></li>
+				    <li><a href="FAQ.html">FAQ</a></li>
+				    <li><a href="Current.html">人才招聘</a></li>
+				    <li><a href="ContactUs.html">联系我们</a></li>
+			    </ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+
+	</div>
+</div>
+
+<div style="background:rgba(0,0,0,.5); height:40px; line-height:40px; color:#fff;">
+		<div class="container">	
+			<div class="span12">
+				<div class="pull-left" style="margin-left:20px;">
+				 联系电话：650-394-5378
+				</div>
+		 	</div>
+		</div>
+</div>
+
+
+
+
+
+
+	<div class="container">
+		<div class="home-middle" >
+			<div class="col-md-6">
+				<div  style="padding-left:0px;">
+				<h2><a href="why-ubertal.html">客户选择我们的理由</a></h2>
+				<ul class="list-unstyled">
+					<li style="margin-top:10px;">我们有在全球范围内选拔出的优秀软件工程师</li>
+					<li style="margin-top:10px;">我们有灵活的合作模式--基于项目/人力需求</li>
+					<li style="margin-top:10px;">免费提供两周无风险试用</li>
+					
+				</ul>
+				</div>
+				<div  style="margin-top:0px;" class="uber-btn" onClick="window.open('sign-in-client.html','_self');">
+					<span class="change-colo dhua">用户入口</span>
+					<span class="uber-join"><img src="images/home-middle-arrow.png"></span>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<div style="margin-left:30px;">
+				<h2><a href="why-ubertal.html">工程师选择我们的理由</a></h2>
+				<ul class="list-unstyled">
+					<li  style="margin-top:10px;">在快速发展、知名企业工作的机会</li>
+					<li  style="margin-top:10px;">赴美工作/定居的机会</li>
+					<li  style="margin-top:10px;">做soho一族--免去上下班的交通烦恼</li>
+					<li  style="margin-top:10px;">有竞争力的薪酬和弹性的工作时间</li>
+
+				</ul>
+				</div>
+				<div class="uber-btn" onClick="window.open('sign-in-developer.html','_self');">
+					<span class="change-colo dhua">工程师入口</span>
+					<span class="uber-join"><img src="images/home-middle-arrow.png"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="home_bg">
+			<div class="top">
+				<div class="pointer"><img src="images/360.png"></div>
+				<div class="pointer"><img src="images/art.png"></div>
+				<div class="pointer"><img src="images/aiv.png"></div>
+				<div class="pointer"><img src="images/axel.png"></div>
+				<div class="pointer"><img src="images/chuwa.png"></div>
+				<div class="pointer"><img src="images/Shinelogo.png"></div>
+			</div>
+			<div class="font_content">
+				<!-- <div class="col-md-3">
+						
+						<ul class="nav nav-tabs nav-stacked">
+						  <li><a href="#home" data-toggle="tab">Home</a></li>
+						  <li><a href="#profile" data-toggle="tab">What We Do</a></li>
+						  <li><a href="#messages" data-toggle="tab">Why Ubertal</a></li>
+						  <li><a href="#settings" data-toggle="tab">The Process</a></li>
+						  <li><a href="#team" data-toggle="tab">Our Team</a></li>
+						  <li><a href="#faq" data-toggle="tab">FAQ</a></li>
+						  <li><a href="#contact" data-toggle="tab">Contact Us</a></li>
+						</ul>
+				</div> -->
+				
+						<!-- Tab panes -->
+						<div class="tab-content" style="font-size:16px;">
+						  <div class="tab-pane active fade in" id="home"><b style="font-weight: normal; color: #df0009; font-size:20px;">公司介绍</b><br>
+<li style="list-style:none; margin-top:15px;">Ubertal是一个提供全球性人才招募和软件开发服务公司，在全美高科技企业中，我们致力于打造顶级软件开发团队。</li>
+<li style="margin-top:15px;list-style:none;">我们给客户提供全球范围内的一流软件工程师，每个工程师都经过我们的严格筛选，其中包括测试他的技术能力、英文沟通能力以及个人素养。最后只留下有突出表现的最优秀的工程师。</li>
+<li style="margin-top:15px;list-style:none;">Ubertal为软件开发服务提供一个全新的视角，让Ubertal的优秀工程师与您一起，重塑您的开发团队。</li>
+<li style="list-style:none;margin-top:15px;">期待您的来信！联系邮箱：<a href="mailto:info@ubertal.com">info@ubertal.com</a></li>
+
+
+
+</div>
+						  <!-- <div class="tab-pane fade" id="profile"><b style="font-weight: normal; color: #df0009; font-size:16px;">WHAT WE DO</b><br>
+Ubertal is an international talent acquisition and placement company for software developers. Enhance your development team with our engineers. We help cut out the noise when seeking engineering talent. A fresh perspective on recruiting. Access to a new talent pool. We source top engineering talent from around the globe, qualify them through our intensive screening process and place them at our partner companies. We work with only the best and brightest engineers from around the globe, typically those who have multinational work experience, excellent communication skills, strong work ethic and are great team players. The companies we work with are leading companies in the US, seeking only the best talent. </div>
+						  <div class="tab-pane fade" id="messages">
+We offer companies a variety of options for acquiring exceptional engineering talent. Access to new pool of talent. Shorten recruiting process due to our qualification. Flexibile options for hiring/contracting with little to no risk.
+<li style="color:#060606; font-weight: 800;">Permanent Hire through H1B Visa Sponsorship</li>
+<li style="list-style:none;text-indent:1em;">In this model, we identify and qualify candidates from the global talent pool.  You interview them and decide whether you would like to sponsor their H1B visa. Before October 1st, you have the option to have the engineer work remotely on a contract basis. The engineer can also come onsite for training during this time. You can evaluate the engineer prior to April 1st after which you would apply for their H1B visa.</li>
+<li style="color:#060606; font-weight: 800;">Onsite Contractor/Contract to hire</li>
+<li style="list-style:none;text-indent:1em;">In this model, we sponsor a candidate’s H1B visa and you have them as contractors onsite. You have the option to convert them to full time employees or keep them as contractors.</li>
+<li style="color:#060606; font-weight: 800;">Remote Contractor</li>
+<li style="list-style:none;text-indent:1em;">Engineers work from home and you benefit from the cost savings of offshore development. The engineer can come periodically onsite for training purposes.</li>
+<li style="color:#060606; font-weight: 800;">Permanent hire via US talent pool</li>
+<li style="list-style:none;text-indent:1em;">We will help you source the best engineering talent that already have work visas to work in the US. Our process for finding candidates and qualifying them is world class and</li>
+						  </div>
+						  <div class="tab-pane fade" id="settings">
+						  	At Ubertal, we believe that our success lies in our ability to truly understand your requirements, not just on a cursory level but in detail. This understanding gives us the ability to find just the right candidate for your needs.<br>
+						  	<li style="list-style:none; font-weight:800;">1.Tell us what your needs are</li>
+						  		a.Are you looking for permanent employees or contractors? <br>
+						  		b.What types of technology skills are you looking for?<br>
+						  		c.How many years of experience?
+						  	<li style="list-style:none; font-weight:800;">2.We will find you candidates that match your requirements</li>
+						  		a.Within a few days, we will provide you with candidate profiles to meet your needs<br>
+						  		b.You can select the candidates you think would be a fit and run them through your interview process<br>
+						  		c.Once a decision is made, we have the engineers ready to work on your project
+						  	<li style="list-style:none; font-weight:800;">3.Work with us RISK FREE</li>
+						  		a.We allow you to work with our engineers on a risk free basis so that you can decide if they are a good fit for your requirements. No hassle. No payment. If you are not satisfied with the engineer, we will find the right person for you.<br>						 
+						  </div>
+						  <div class="tab-pane fade" id="team">...</div>
+						  <div class="tab-pane fade" id="faq">...</div>
+						  <div class="tab-pane fade" id="contact">...</div> -->
+						</div>
+				
+					
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cop-right">© 2014 Ubertal. All rights reserved.</div>
+		
+	</div>
+	<div class="current-user name-float">
+		<div>
+			.NET Developer<br>
+		Hyderabad, India
+		</div>
+	</div>
+</body>
 </html>
-
